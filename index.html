@@ -18,31 +18,53 @@
 <body class="font-sans antialiased text-gray-800">
 
   <!-- Header Section -->
-  <header class="sticky top-0 z-50 bg-white shadow-md">
-    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
       <a href="#" class="flex items-center">
-        <img src="assets/logo.png" alt="IAS - Individual Glass Solutions" class="h-12 w-auto">
+        <img src="assets/logo.png" alt="IAS - Individual Glass Solutions" class="h-10 w-auto">
       </a>
-      <div class="hidden md:flex space-x-4">
-        <a href="#produkte" class="text-gray-600 hover:text-accent-color">Lösungen</a>
-        <a href="#versprechen" class="text-gray-600 hover:text-accent-color">Unsere Versprechen</a>
-        <a href="#projekte" class="text-gray-600 hover:text-accent-color">Projekte</a>
-        <a href="#kontakt" class="text-gray-600 hover:text-accent-color">Kontakt</a>
+      
+      <!-- Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="#produkte" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Lösungen</a>
+        <a href="#versprechen" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Unsere Versprechen</a>
+        <a href="#projekte" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Projekte</a>
+        <a href="#kontakt" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Kontakt</a>
       </div>
-      <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+      
+      <!-- CTA Button + Mobile Menu Button -->
+      <div class="flex items-center space-x-4">
+        <!-- CTA -->
+        <a href="#kontakt" class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
+          Beratung anfordern
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </nav>
+    
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white py-2">
-      <a href="#produkte" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Lösungen</a>
-      <a href="#versprechen" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Unsere Versprechen</a>
-      <a href="#projekte" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Projekte</a>
-      <a href="#kontakt" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Kontakt</a>
+    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
+      <div class="px-6 py-4 space-y-3">
+        <a href="#produkte" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Lösungen</a>
+        <a href="#versprechen" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Unsere Versprechen</a>
+        <a href="#projekte" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Projekte</a>
+        <a href="#kontakt" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Kontakt</a>
+        <div class="pt-4 border-t border-gray-200">
+          <a href="#kontakt" class="block w-full bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300">
+            Beratung anfordern
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
