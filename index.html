@@ -18,52 +18,51 @@
 <body class="font-sans antialiased text-gray-800">
 
   <!-- Header Section -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+  <header class="sticky top-0 z-50 bg-white backdrop-blur-sm shadow-sm border-b border-gray-100/50">
+    <nav class="container mx-auto px-8 py-5 flex justify-between items-center">
 
-      <!-- Logo (nur Bild, dominant dargestellt) -->
-      <a href="#" class="flex items-center justify-center pl-3 md:pl-6">
+      <!-- Logo (freigestellt, elegant eingebettet) -->
+      <a href="#" class="flex items-center">
         <img src="attached_assets/logoos.png" alt="IAS Logo"
-          class="h-20 md:h-24 w-auto max-w-[260px] drop-shadow-sm object-contain">
+          class="h-20 w-auto bg-transparent object-contain transition-opacity duration-300 hover:opacity-90">
       </a>
 
       <!-- Navigation -->
-      <div class="hidden lg:flex items-center space-x-8">
+      <div class="hidden lg:flex items-center space-x-10">
         <a href="index.html"
-          class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Startseite</a>
+          class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Startseite</a>
 
         <!-- Lösungen Dropdown -->
         <div class="relative group">
-          <button class="text-gray-700 hover:text-accent-color font-medium transition duration-300 flex items-center">
+          <button class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 flex items-center tracking-wide">
             Lösungen
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
           <div
-            class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 min-w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            class="absolute top-full left-0 bg-white shadow-xl rounded-xl py-3 min-w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100/50">
             <a href="duschkabinen.html"
-              class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Duschkabinen</a>
+              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Duschkabinen</a>
             <a href="glasvordaecher.html"
-              class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Glasvordächer</a>
+              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Glasvordächer</a>
             <a href="bruestungen.html"
-              class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Brüstungen</a>
+              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Brüstungen</a>
           </div>
         </div>
 
-        <a href="#versprechen" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Unsere
-          Versprechen</a>
+        <a href="#versprechen" class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Unsere Versprechen</a>
         <a href="projekte.html"
-          class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Projekte</a>
+          class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Projekte</a>
         <a href="kontaktformular.html"
-          class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Kontakt</a>
+          class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Kontakt</a>
       </div>
 
       <!-- CTA Button + Mobile Menu Button -->
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-6">
         <!-- CTA -->
         <a href="kontaktformular.html"
-          class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
+          class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-7 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md tracking-wide">
           Beratung anfordern
         </a>
 
