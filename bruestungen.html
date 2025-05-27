@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glasbrüstungen & Geländer - Sicherheit mit Durchblick | IAS</title>
+  <meta name="description" content="Maßgefertigte Glasbrüstungen und Glasgeländer für Balkone, Treppen und Terrassen. Maximale Sicherheit bei freier Sicht.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Header Section -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/logo.png" alt="IAS - Individual Glass Solutions" class="h-10 w-auto">
+      </a>
+      
+      <!-- Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Startseite</a>
+        
+        <!-- Lösungen Dropdown -->
+        <div class="relative group">
+          <button class="text-accent-color font-medium transition duration-300 flex items-center">
+            Lösungen
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 min-w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="duschkabinen.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Duschkabinen</a>
+            <a href="glasvordaecher.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Glasvordächer</a>
+            <a href="bruestungen.html" class="block px-4 py-2 text-accent-color bg-gray-50 hover:text-accent-color">Brüstungen</a>
+          </div>
+        </div>
+        
+        <a href="projekte.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Projekte</a>
+        <a href="kontaktformular.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Kontakt</a>
+      </div>
+      
+      <!-- CTA Button + Mobile Menu Button -->
+      <div class="flex items-center space-x-4">
+        <a href="kontaktformular.html" class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
+          Beratung anfordern
+        </a>
+        
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Startseite</a>
+        <div class="border-l-2 border-accent-color pl-4 space-y-2">
+          <p class="text-gray-500 text-sm font-medium">Lösungen</p>
+          <a href="duschkabinen.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Duschkabinen</a>
+          <a href="glasvordaecher.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Glasvordächer</a>
+          <a href="bruestungen.html" class="block text-accent-color py-1 transition duration-300">Brüstungen</a>
+        </div>
+        <a href="projekte.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Projekte</a>
+        <a href="kontaktformular.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Kontakt</a>
+        <div class="pt-4 border-t border-gray-200">
+          <a href="kontaktformular.html" class="block w-full bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300">
+            Beratung anfordern
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-gray-50 to-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Glasbrüstungen & Geländer</h1>
+            <p class="text-xl text-gray-700 mb-8">
+              Grenzenlose Ausblicke bei maximaler Sicherheit. Unsere maßgefertigten Glasbrüstungen verbinden Schutz mit stilvoller Transparenz für Balkone, Terrassen und Treppen.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center">
+                Kostenlose Beratung
+              </a>
+              <a href="projekte.html" class="border-2 border-accent-color text-accent-color hover:bg-accent-color hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center">
+                Projekte ansehen
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <img src="assets/products/glasbruesting.jpg" alt="Moderne Glasbrüstung mit Panoramablick" class="rounded-lg shadow-xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Warum Glasbrüstungen die bessere Wahl sind</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Ungehinderte Sicht</h3>
+            <p class="text-gray-700">Transparente Glasbrüstungen bewahren Ihren Panoramablick und lassen Räume größer und heller wirken.</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Höchste Sicherheit</h3>
+            <p class="text-gray-700">ESG-Sicherheitsglas nach DIN-Normen gewährleistet maximalen Schutz bei optimaler Bruchsicherheit.</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Langlebigkeit</h3>
+            <p class="text-gray-700">Witterungsbeständige Materialien und rostfreie Befestigungen sorgen für jahrzehntelange Haltbarkeit.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Variants -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Unsere Brüstungs-Lösungen</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Balkonbrüstungen -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/balkonbruestung.jpg" alt="Glasbrüstung für Balkon" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Balkonbrüstungen</h3>
+              <p class="text-gray-700 mb-4">
+                Erweitern Sie Ihren Wohnraum ins Freie. Unsere Balkonbrüstungen schaffen Sicherheit ohne Sichtbarrieren.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Freie Sicht in alle Richtungen</li>
+                <li>✓ Windschutz bei Bedarf</li>
+                <li>✓ Verschiedene Befestigungsarten</li>
+                <li>✓ DIN-konforme Ausführung</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+          <!-- Treppengeländer -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/treppengelaender.jpg" alt="Glasgeländer für Treppen" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Treppengeländer</h3>
+              <p class="text-gray-700 mb-4">
+                Sicherheit und Eleganz für Innen- und Außentreppen. Lichtdurchlässige Geländer für offene Raumwirkung.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Für Innen- und Außenbereiche</li>
+                <li>✓ Handlauf aus Edelstahl optional</li>
+                <li>✓ Verschiedene Glashöhen</li>
+                <li>✓ Sichere Punkthalterung</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+          <!-- Terrassenabgrenzungen -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/terrassenabgrenzung.jpg" alt="Glasabgrenzung für Terrassen" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Terrassenabgrenzungen</h3>
+              <p class="text-gray-700 mb-4">
+                Schaffen Sie definierte Bereiche bei maximaler Offenheit. Ideal als Wind- und Sichtschutz für Terrassen.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Windschutz bei Durchsicht</li>
+                <li>✓ Flexible Höhen möglich</li>
+                <li>✓ Optional als Sichtschutz</li>
+                <li>✓ Elegante Raumteilung</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+          <!-- Französische Balkone -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/franzoesischer-balkon.jpg" alt="Französischer Balkon aus Glas" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Französische Balkone</h3>
+              <p class="text-gray-700 mb-4">
+                Bodentiefe Fenster sicher absichern. Minimalistisches Design für maximum Lichteinfall und Optik.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Absturzsicherung für Fenster</li>
+                <li>✓ Minimaler Platzbedarf</li>
+                <li>✓ Unauffällige Montage</li>
+                <li>✓ Maximaler Lichteinfall</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Technische Spezifikationen</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-lg font-bold">ESG</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Sicherheitsglas</h3>
+            <p class="text-gray-600 text-sm">Einscheiben-Sicherheitsglas nach DIN EN 12150</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-lg font-bold">1,1m</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Mindesthöhe</h3>
+            <p class="text-gray-600 text-sm">Normkonforme Brüstungshöhen nach DIN 18065</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-lg font-bold">V4A</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Edelstahlhalterung</h3>
+            <p class="text-gray-600 text-sm">Rostfreie Befestigung mit V4A Edelstahl</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-lg font-bold">1kN</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Belastbarkeit</h3>
+            <p class="text-gray-600 text-sm">Horizontale Prüflast nach DIN EN 14179</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-800 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Verwirklichen Sie Ihre Glasbrüstung</h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+          Verbinden Sie Sicherheit mit unvergesslichen Ausblicken. Wir planen und realisieren Ihre individuelle Glasbrüstung nach Maß.
+        </p>
+        <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-4 px-10 rounded-lg text-xl transition duration-300 inline-block">
+          Jetzt kostenlos beraten lassen
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <div class="mb-4">
+        <a href="#" class="mx-2 hover:text-white">Facebook</a>
+        <a href="#" class="mx-2 hover:text-white">Instagram</a>
+        <a href="#" class="mx-2 hover:text-white">Pinterest</a>
+      </div>
+      <nav class="mb-4">
+        <a href="/impressum" class="mx-2 hover:text-white">Impressum</a>
+        <a href="/datenschutz" class="mx-2 hover:text-white">Datenschutz</a>
+      </nav>
+      <p>© <span id="currentYear"></span> IAS. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA Mobile -->
+  <div class="fixed bottom-4 right-4 lg:hidden z-40">
+    <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+      Beratung
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

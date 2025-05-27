@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glasvordächer nach Maß - Eleganter Schutz | IAS</title>
+  <meta name="description" content="Maßgefertigte Glasvordächer für Eingänge und Terrassen. Moderner Wetterschutz aus Sicherheitsglas mit stilvoller Optik.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Header Section -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/logo.png" alt="IAS - Individual Glass Solutions" class="h-10 w-auto">
+      </a>
+      
+      <!-- Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Startseite</a>
+        
+        <!-- Lösungen Dropdown -->
+        <div class="relative group">
+          <button class="text-accent-color font-medium transition duration-300 flex items-center">
+            Lösungen
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 min-w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="duschkabinen.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Duschkabinen</a>
+            <a href="glasvordaecher.html" class="block px-4 py-2 text-accent-color bg-gray-50 hover:text-accent-color">Glasvordächer</a>
+            <a href="bruestungen.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Brüstungen</a>
+          </div>
+        </div>
+        
+        <a href="projekte.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Projekte</a>
+        <a href="kontaktformular.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Kontakt</a>
+      </div>
+      
+      <!-- CTA Button + Mobile Menu Button -->
+      <div class="flex items-center space-x-4">
+        <a href="kontaktformular.html" class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
+          Beratung anfordern
+        </a>
+        
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Startseite</a>
+        <div class="border-l-2 border-accent-color pl-4 space-y-2">
+          <p class="text-gray-500 text-sm font-medium">Lösungen</p>
+          <a href="duschkabinen.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Duschkabinen</a>
+          <a href="glasvordaecher.html" class="block text-accent-color py-1 transition duration-300">Glasvordächer</a>
+          <a href="bruestungen.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Brüstungen</a>
+        </div>
+        <a href="projekte.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Projekte</a>
+        <a href="kontaktformular.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Kontakt</a>
+        <div class="pt-4 border-t border-gray-200">
+          <a href="kontaktformular.html" class="block w-full bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300">
+            Beratung anfordern
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-gray-50 to-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Glasvordächer nach Maß</h1>
+            <p class="text-xl text-gray-700 mb-8">
+              Eleganter Wetterschutz, der begeistert. Unsere maßgefertigten Glasvordächer vereinen funktionalen Schutz mit zeitloser Architektur und schaffen einladende Eingangsbereiche.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center">
+                Kostenlose Beratung
+              </a>
+              <a href="projekte.html" class="border-2 border-accent-color text-accent-color hover:bg-accent-color hover:text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center">
+                Projekte ansehen
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <img src="assets/products/glasvordach.jpg" alt="Elegantes Glasvordach über Hauseingang" class="rounded-lg shadow-xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Vorteile unserer Glasvordächer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Zuverlässiger Wetterschutz</h3>
+            <p class="text-gray-700">Schutz vor Regen, Schnee und UV-Strahlung - für einen trockenen und sicheren Eingangsbereich.</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Moderne Optik</h3>
+            <p class="text-gray-700">Transparente Eleganz, die sich harmonisch in jede Architektur einfügt und Ihren Eingang aufwertet.</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Wertsteigerung</h3>
+            <p class="text-gray-700">Ein hochwertiges Glasvordach steigert nicht nur den Komfort, sondern auch den Wert Ihrer Immobilie.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Variants -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Unsere Vordach-Varianten</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Freitragende Vordächer -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/freitragendes-vordach.jpg" alt="Freitragendes Glasvordach" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Freitragende Vordächer</h3>
+              <p class="text-gray-700 mb-4">
+                Elegante Konstruktionen ohne sichtbare Stützen. Perfekt für moderne Architektur mit minimalistischem Design.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Keine sichtbaren Stützen</li>
+                <li>✓ Maximale Bewegungsfreiheit</li>
+                <li>✓ Moderne, schwebende Optik</li>
+                <li>✓ Verschiedene Größen möglich</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+          <!-- Vordächer mit Stützen -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/vordach-mit-stuetzen.jpg" alt="Glasvordach mit Edelstahlstützen" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Vordächer mit Stützen</h3>
+              <p class="text-gray-700 mb-4">
+                Klassische Konstruktionen mit filigranen Stützen aus Edelstahl oder Aluminium für größere Spannweiten.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Größere Überdachungen möglich</li>
+                <li>✓ Edelstahl- oder Aluminiumstützen</li>
+                <li>✓ Hohe Stabilität</li>
+                <li>✓ Klassisches Design</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+          <!-- Seitlich offene Vordächer -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/offenes-vordach.jpg" alt="Seitlich offenes Glasvordach" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Offene Vordächer</h3>
+              <p class="text-gray-700 mb-4">
+                Einfache und kostengünstige Lösung für grundlegenden Wetterschutz mit zeitloser Eleganz.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Kostengünstige Variante</li>
+                <li>✓ Einfache Montage</li>
+                <li>✓ Vielseitig einsetzbar</li>
+                <li>✓ Grundlegender Wetterschutz</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+          <!-- Geschlossene Vordächer -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="assets/products/geschlossenes-vordach.jpg" alt="Geschlossenes Glasvordach mit Seitenwänden" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Geschlossene Vordächer</h3>
+              <p class="text-gray-700 mb-4">
+                Maximaler Schutz durch seitliche Verglasung. Ideal für windige Standorte oder größere Eingangsbereiche.
+              </p>
+              <ul class="text-gray-600 space-y-2 mb-6">
+                <li>✓ Schutz vor Wind und Wetter</li>
+                <li>✓ Seitliche Verglasung</li>
+                <li>✓ Maximaler Komfort</li>
+                <li>✓ Auch als Windfang nutzbar</li>
+              </ul>
+              <a href="kontaktformular.html" class="text-accent-color font-semibold hover:underline">Beratung anfordern →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Features -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Technische Highlights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">VSG-Sicherheitsglas</h3>
+            <p class="text-gray-600 text-sm">Verbund-Sicherheitsglas für maximale Bruchsicherheit</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Statische Berechnung</h3>
+            <p class="text-gray-600 text-sm">Professionelle Dimensionierung für Wind- und Schneelasten</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Entwässerung</h3>
+            <p class="text-gray-600 text-sm">Durchdachte Regenwasserableitung in die Hausentwässerung</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">LED-Integration</h3>
+            <p class="text-gray-600 text-sm">Optional: Beleuchtung für stimmungsvolle Akzente</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-800 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Ihr Traumvordach wartet auf Sie</h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+          Schaffen Sie einen einladenden und geschützten Eingangsbereich. Wir beraten Sie gerne kostenlos und erstellen Ihnen ein unverbindliches Angebot.
+        </p>
+        <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-4 px-10 rounded-lg text-xl transition duration-300 inline-block">
+          Jetzt kostenlos beraten lassen
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <div class="mb-4">
+        <a href="#" class="mx-2 hover:text-white">Facebook</a>
+        <a href="#" class="mx-2 hover:text-white">Instagram</a>
+        <a href="#" class="mx-2 hover:text-white">Pinterest</a>
+      </div>
+      <nav class="mb-4">
+        <a href="/impressum" class="mx-2 hover:text-white">Impressum</a>
+        <a href="/datenschutz" class="mx-2 hover:text-white">Datenschutz</a>
+      </nav>
+      <p>© <span id="currentYear"></span> IAS. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA Mobile -->
+  <div class="fixed bottom-4 right-4 lg:hidden z-40">
+    <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+      Beratung
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
