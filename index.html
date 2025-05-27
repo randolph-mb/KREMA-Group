@@ -1,16 +1,455 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ihr Zuhause, Ihre Vision – Perfektioniert in Glas.</title>
+  <meta name="description"
+    content="Wir verwandeln Ihre Wohnträume in maßgefertigte Realität. Erleben Sie individuelle Glaslösungen, die Stil, Funktion und Persönlichkeit vereinen.">
+  <!-- Favicon etc. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Eigene CSS-Anpassungen können hier oder in einer separaten Datei erfolgen */
+    /* Beispiel für einen sanften Hintergrundverlauf für den Hero-Bereich */
+    .hero-gradient {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    }
+
+    /* Für das Hintergrundvideo (Beispiel) */
+    .hero-video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Ein subtiler Akzent für Premium-Gefühl */
+    .accent-color {
+      color: #B8860B;
+    }
+
+    /* Beispiel: Dunkelgold */
+    .accent-bg {
+      background-color: #B8860B;
+    }
+  </style>
 </head>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Optional: Header mit Navigation, wenn vorhanden (außerhalb des Hero) -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800">Logo/Markenname</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#produkte" class="text-gray-600 hover:text-accent-color">Lösungen</a>
+        <a href="#versprechen" class="text-gray-600 hover:text-accent-color">Unsere Versprechen</a>
+        <a href="#projekte" class="text-gray-600 hover:text-accent-color">Projekte</a>
+        <a href="#kontakt" class="text-gray-600 hover:text-accent-color">Kontakt</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white py-2">
+      <a href="#produkte" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Lösungen</a>
+      <a href="#versprechen" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Unsere Versprechen</a>
+      <a href="#projekte" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Projekte</a>
+      <a href="#kontakt" class="block px-6 py-2 text-gray-600 hover:bg-gray-100">Kontakt</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero-Bereich -->
+    <section class="relative h-screen flex items-center justify-center text-white text-center overflow-hidden">
+      <!-- Hintergrund Video/Bild -->
+      <!-- Für Video: -->
+      <!-- <video autoplay muted loop class="hero-video-bg">
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+      <!-- Für Bild (mit Fallback für Video): -->
+      <img src="https://via.placeholder.com/1920x1080.png?text=Moderne+Villa+mit+Glasfront"
+        alt="Moderne Villa mit großer Glasfront bei Sonnenuntergang" class="hero-video-bg">
+
+      <div class="relative z-10 p-6 hero-gradient w-full h-full flex flex-col items-center justify-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Ihr Zuhause, Ihre Vision – Perfektioniert in Glas.
+        </h1>
+        <!-- Alternative Headline:
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Mehr Licht, mehr Raum, mehr Sie: <br class="hidden md:block">Maßgefertigte Glaskunst für Ihr einzigartiges Zuhause.</h1>
+                -->
+        <p class="text-lg md:text-xl mb-8 max-w-3xl">
+          Wir verwandeln Ihre Wohnträume in maßgefertigte Realität. Erleben Sie individuelle Glaslösungen, die Stil,
+          Funktion und Persönlichkeit vereinen – von der ersten Idee bis zur meisterhaften Vollendung. Bei uns ist Ihre
+          Sonderanfertigung der Standard.
+        </p>
+        <a href="#kontakt"
+          class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300">
+          Ihre Glasvision beginnt hier: Unverbindlich beraten lassen
+        </a>
+        <a href="#projekte" class="mt-4 text-sm text-gray-200 hover:text-white underline">
+          Oder entdecken Sie unsere Projektgalerie
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. Sektion: "Mehr als nur Glas: Ihr Zuhause neu definiert" -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Sie suchen mehr als Standard? Sie wünschen
+          sich Einzigartigkeit.</h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+          Ihr Zuhause ist ein Ausdruck Ihrer Persönlichkeit. Standardlösungen werden dem oft nicht gerecht. Sie wünschen
+          sich mehr Licht, fließende Übergänge, ein Design, das Ihre Handschrift trägt und gleichzeitig höchste
+          Ansprüche an Qualität und Langlebigkeit erfüllt? Wir verstehen das. Seit über XX Jahren schaffen wir mit
+          Leidenschaft und Präzision individuelle Glaselemente, die Räume verwandeln und Lebensqualität steigern.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+          <div class="flex flex-col items-center">
+            <svg class="w-12 h-12 text-accent-color mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.663 17h4.673M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg> <!-- Beispiel Icon Licht -->
+            <span class="text-gray-700 font-medium">Mehr Licht</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <svg class="w-12 h-12 text-accent-color mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5"></path>
+            </svg> <!-- Beispiel Icon Raum -->
+            <span class="text-gray-700 font-medium">Fließender Raum</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <svg class="w-12 h-12 text-accent-color mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg> <!-- Beispiel Icon Individualität -->
+            <span class="text-gray-700 font-medium">Ihre Individualität</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Sektion: "Entdecken Sie die Vielfalt maßgefertigter Glaslösungen" -->
+    <section id="produkte" class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Entdecken Sie die Vielfalt
+          maßgefertigter Glaslösungen</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Kachel 1: Glasvordächer & Terrassenüberdachungen -->
+          <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+            <img src="https://via.placeholder.com/600x400.png?text=Elegantes+Glasvordach"
+              alt="Elegantes Glasvordach über Eingang"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">Ihr stilvoller Schutzschild: Eleganz, die Wetter
+                trotzt.</h3>
+              <p class="text-gray-700 mb-4">Genießen Sie jeden Moment im Freien, geschützt und stilvoll. Unsere
+                maßgefertigten Überdachungen erweitern Ihren Lebensraum und setzen architektonische Akzente.</p>
+              <a href="#" class="text-accent-color font-semibold hover:underline">Mehr erfahren →</a>
+            </div>
+          </div>
+          <!-- Kachel 2: Ganzglas-Duschkabinen & Trennwände -->
+          <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+            <img src="https://via.placeholder.com/600x400.png?text=Luxuriöse+Walk-In+Dusche"
+              alt="Luxuriöse Walk-In Dusche aus Glas"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">Ihr privates Spa-Erlebnis: Transparenz für pure
+                Entspannung.</h3>
+              <p class="text-gray-700 mb-4">Verwandeln Sie Ihr Bad in eine Wohlfühloase. Millimetergenau gefertigte
+                Duschen und Trennwände aus Glas schaffen Weite, Licht und zeitlose Eleganz.</p>
+              <a href="#" class="text-accent-color font-semibold hover:underline">Mehr erfahren →</a>
+            </div>
+          </div>
+          <!-- Kachel 3: Glasbrüstungen & Balkonverglasungen -->
+          <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+            <img src="https://via.placeholder.com/600x400.png?text=Balkon+mit+Glasgeländer"
+              alt="Balkon mit Glasgeländer und Panoramablick"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">Grenzenlose Ausblicke, kompromisslose Sicherheit.
+              </h3>
+              <p class="text-gray-700 mb-4">Öffnen Sie Ihre Räume und genießen Sie freie Sicht ohne Abstriche bei der
+                Sicherheit. Unsere Glasgeländer und -brüstungen verbinden Design mit höchster Stabilität.</p>
+              <a href="#" class="text-accent-color font-semibold hover:underline">Mehr erfahren →</a>
+            </div>
+          </div>
+          <!-- Kachel 4: Individuelle Glaselemente für Wohnräume -->
+          <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+            <img src="https://via.placeholder.com/600x400.png?text=Stilvolle+Glas-Schiebetür"
+              alt="Stilvolle Glas-Schiebetür im Wohnraum"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-2">Raum für Ihre Ideen: Lichtdurchflutete Akzente, die
+                Persönlichkeit zeigen.</h3>
+              <p class="text-gray-700 mb-4">Von Glastüren über Raumteiler bis hin zu Küchenrückwänden - setzen Sie mit
+                maßgefertigten Glaselementen einzigartige Highlights in Ihrem Interieur.</p>
+              <a href="#" class="text-accent-color font-semibold hover:underline">Mehr erfahren →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Sektion: "Warum Maßanfertigung bei uns zum Standard gehört..." (USP) -->
+    <section class="py-16 md:py-24 bg-gray-900 text-white">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 text-center md:text-left">
+          <h2 class="text-3xl md:text-4xl font-semibold mb-6">Ihr Zuhause ist einzigartig. Ihre Glaslösung auch.</h2>
+          <p class="text-lg text-gray-300 mb-8">
+            Vergessen Sie Kompromisse. Bei uns gibt es keine 'Lösungen von der Stange'. Wir glauben, dass Perfektion im
+            Detail liegt und Individualität den Unterschied macht. Deshalb ist jede Glasanfertigung ein
+            maßgeschneidertes Meisterstück, präzise geplant mit modernster Lasertechnik und exakt auf Ihre Wünsche und
+            die Gegebenheiten Ihres Zuhauses zugeschnitten. Ohne Aufpreis für das, was für uns selbstverständlich ist:
+            Ihre absolute Zufriedenheit.
+          </p>
+          <a href="#kontakt"
+            class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300">
+            Jetzt Ihre Vision besprechen
+          </a>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <!-- Visuell: Grafik oder Icon Präzision/Maßarbeit -->
+          <img src="https://via.placeholder.com/400x300.png?text=Präzisions-Laseraufmaß"
+            alt="Symbol für Präzision und Maßarbeit bei Glaslösungen" class="rounded-lg shadow-xl">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Sektion: "Unsere Versprechen für Ihre sorgenfreie Glaslösung" (Vorteile & Vertrauensanker) -->
+    <section id="versprechen" class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Unsere Versprechen für Ihre
+          sorgenfreie Glaslösung</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <!-- Punkt 1 (Qualität) -->
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <img src="https://img.icons8.com/ios-filled/50/B8860B/quality-check.png" alt="Made in Germany Siegel"
+              class="h-12 w-12 mx-auto mb-4" /> <!-- Beispiel Icon -->
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Qualität, die Bestand hat</h3>
+            <p class="text-gray-700">Wir verwenden ausschließlich erstklassige Materialien namhafter Hersteller und
+              geprüftes Sicherheitsglas (ESG/VSG) – für dauerhafte Schönheit und Funktion, 'Made in Germany'.</p>
+          </div>
+          <!-- Punkt 2 (Service) -->
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <img src="https://img.icons8.com/ios-filled/50/B8860B/handshake.png" alt="Handshake Symbol"
+              class="h-12 w-12 mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Persönliche Rundum-Betreuung</h3>
+            <p class="text-gray-700">Von der ersten Idee über das präzise Aufmaß bis zur sauberen Montage – Ihr
+              persönlicher Ansprechpartner begleitet Sie transparent und zuverlässig durch das gesamte Projekt.</p>
+          </div>
+          <!-- Punkt 3 (Expertise/Sicherheit) -->
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <img src="https://img.icons8.com/ios-filled/50/B8860B/shield.png" alt="Schutzschild Symbol"
+              class="h-12 w-12 mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Geprüfte Sicherheit & Statik</h3>
+            <p class="text-gray-700">Jede Konstruktion wird von unseren Experten und ggf. externen Statikern geprüft. So
+              genießen Sie nicht nur exklusives Design, sondern auch maximale Sicherheit ohne böse Überraschungen.</p>
+          </div>
+          <!-- Punkt 4 (Pflegeleichtigkeit/Langlebigkeit) -->
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <img src="https://img.icons8.com/ios-filled/50/B8860B/water-drop.png" alt="Wassertropfen mit Abperleffekt"
+              class="h-12 w-12 mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Zeitlos schön & pflegeleicht</h3>
+            <p class="text-gray-700">Unsere Glasoberflächen sind dank spezieller Veredelungen besonders
+              widerstandsfähig, schmutzabweisend und leicht zu reinigen – für jahrelange Freude mit minimalem Aufwand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Sektion: "Lassen Sie sich von vollendeten Glasträumen inspirieren" (Social Proof / Portfolio Teaser) -->
+    <section id="projekte" class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">So könnte Ihr Zuhause erstrahlen:
+        </h2>
+        <!-- Hier Slider oder Masonry Grid implementieren. Beispielhaft mit statischen Bildern: -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="group relative">
+            <img src="https://via.placeholder.com/500x350.png?text=Projekt+1" alt="Glasprojekt Beispiel 1"
+              class="rounded-lg shadow-lg w-full h-auto">
+            <div
+              class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center rounded-lg">
+              <p class="text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">Moderne
+                Glasbrüstung</p>
+            </div>
+          </div>
+          <div class="group relative">
+            <img src="https://via.placeholder.com/500x350.png?text=Projekt+2+(Vorher)"
+              alt="Glasprojekt Beispiel 2 Vorher" class="rounded-lg shadow-lg w-full h-auto">
+            <div
+              class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center rounded-lg">
+              <p class="text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Glasvordach nach Maß</p>
+            </div>
+          </div>
+          <div class="group relative">
+            <img src="https://via.placeholder.com/500x350.png?text=Projekt+3" alt="Glasprojekt Beispiel 3"
+              class="rounded-lg shadow-lg w-full h-auto">
+            <div
+              class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center rounded-lg">
+              <p class="text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Individuelle Duschkabine</p>
+            </div>
+          </div>
+        </div>
+        <!-- Optional: Kundenstimme -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <img src="https://via.placeholder.com/80x80.png?text=Kunde" alt="Kundenfoto Familie Mustermann"
+            class="w-20 h-20 rounded-full mx-auto mb-4">
+          <blockquote class="text-xl italic text-gray-700">
+            "Wir sind überwältigt! Die Beratung war top, die Umsetzung perfekt. Unser neues Glasvordach ist ein echter
+            Hingucker."
+          </blockquote>
+          <p class="text-gray-600 mt-2">– Familie Mustermann, Musterstadt</p>
+        </div>
+        <div class="text-center">
+          <a href="/projektgalerie"
+            class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300">
+            Weitere Projekte entdecken
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Sektion: "Ihr Weg zur individuellen Glaslösung in 4 einfachen Schritten" -->
+    <section class="py-16 md:py-24 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">So einfach verwirklichen wir
+          gemeinsam Ihre Glasvision:</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+          <!-- Schritt 1 -->
+          <div class="text-center p-6">
+            <div class="flex justify-center mb-4">
+              <div
+                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                1</div>
+            </div>
+            <img src="https://img.icons8.com/ios/50/B8860B/speech-bubble--v1.png" alt="Beratung & Ideenfindung Icon"
+              class="h-12 w-12 mx-auto mb-3" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Beratung & Ideenfindung</h3>
+            <p class="text-gray-700">Sie teilen uns Ihre Wünsche mit, wir inspirieren Sie mit Möglichkeiten.</p>
+          </div>
+          <!-- Schritt 2 -->
+          <div class="text-center p-6">
+            <div class="flex justify-center mb-4">
+              <div
+                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                2</div>
+            </div>
+            <img src="https://img.icons8.com/ios/50/B8860B/blueprint.png" alt="Planung & Präzisionsaufmaß Icon"
+              class="h-12 w-12 mx-auto mb-3" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Planung & Präzisionsaufmaß</h3>
+            <p class="text-gray-700">Vor Ort nehmen wir mit Lasertechnik exakt Maß und planen jedes Detail.</p>
+          </div>
+          <!-- Schritt 3 -->
+          <div class="text-center p-6">
+            <div class="flex justify-center mb-4">
+              <div
+                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                3</div>
+            </div>
+            <img src="https://img.icons8.com/ios/50/B8860B/maintenance.png" alt="Maßfertigung Icon"
+              class="h-12 w-12 mx-auto mb-3" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Maßfertigung in Meisterqualität</h3>
+            <p class="text-gray-700">Ihr Unikat wird in unserer Werkstatt mit Sorgfalt und Expertise gefertigt.</p>
+          </div>
+          <!-- Schritt 4 -->
+          <div class="text-center p-6">
+            <div class="flex justify-center mb-4">
+              <div
+                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                4</div>
+            </div>
+            <img src="https://img.icons8.com/ios/50/B8860B/construction-worker.png" alt="Montage & Übergabe Icon"
+              class="h-12 w-12 mx-auto mb-3" />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Fachgerechte Montage & Übergabe</h3>
+            <p class="text-gray-700">Unsere Profis installieren Ihre Glaslösung sauber, pünktlich und perfekt.</p>
+          </div>
+        </div>
+        <p class="text-center text-lg text-gray-700 mt-12 max-w-3xl mx-auto">
+          Wir hören Ihnen zu, denken mit und finden Lösungen, die wirklich zu Ihnen passen. Seit über XX Jahren
+          gestalten wir mit individuellem Glasdesign die Wohnräume und Außenbereiche unserer Kunden – mit voller
+          Transparenz und einem Ergebnis, das lange Freude bereitet.
+        </p>
+      </div>
+    </section>
+
+    <!-- 8. Finaler Call-to-Action Bereich -->
+    <section id="kontakt" class="py-16 md:py-24 bg-gray-800 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Bereit, Ihrem Zuhause einen Hauch von Exklusivität zu
+          verleihen?</h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+          Erzählen Sie uns von Ihren Ideen. Wir beraten Sie gerne unverbindlich und erstellen Ihnen ein
+          maßgeschneidertes Angebot.
+        </p>
+        <a href="/kontaktformular"
+          class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-4 px-10 rounded-lg text-xl transition duration-300 inline-block mb-8">
+          Jetzt kostenloses Beratungsgespräch anfordern
+        </a>
+        <div class="text-gray-300">
+          <p class="mb-2">Oder rufen Sie uns direkt an: <a href="tel:+491234567890"
+              class="hover:text-white underline font-semibold">(0123) 456 7890</a></p>
+          <p>E-Mail: <a href="mailto:info@ihre-glasvision.de"
+              class="hover:text-white underline font-semibold">info@ihre-glasvision.de</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <div class="mb-4">
+        <!-- Social Media Icons (optional) -->
+        <a href="#" class="mx-2 hover:text-white">Facebook</a>
+        <a href="#" class="mx-2 hover:text-white">Instagram</a>
+        <a href="#" class="mx-2 hover:text-white">Pinterest</a>
+      </div>
+      <nav class="mb-4">
+        <a href="/impressum" class="mx-2 hover:text-white">Impressum</a>
+        <a href="/datenschutz" class="mx-2 hover:text-white">Datenschutz</a>
+        <!-- Weitere Links -->
+      </nav>
+      <p>© <span id="currentYear"></span> IAS. Alle Rechte vorbehalten.</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Current Year for Footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Placeholder für Slider/Masonry JS Initialisierung (z.B. Swiper.js, Masonry.js)
+        // Beispiel:
+        // if (typeof Swiper !== 'undefined') {
+        //   const swiper = new Swiper('.swiper-container', { /* options */ });
+        // }
+  </script>
+
 </body>
 
 </html>
