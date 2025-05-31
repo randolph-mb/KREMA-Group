@@ -1,0 +1,71 @@
+  <!-- ... dein gesamter Footer ... -->
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Funktion zum Anpassen des Paddings des Hero-Inhalts
+    function adjustHeroContentPadding() {
+      const header = document.getElementById('site-header');
+      const heroContentLayer = document.getElementById('hero-content-layer');
+
+      if (header && heroContentLayer) {
+        const headerHeight = header.offsetHeight;
+        // Wichtig: Wir setzen das Padding-Top des Content-Layers,
+        // NICHT der gesamten Section.
+        heroContentLayer.style.paddingTop = `${headerHeight}px`;
+
+        // Die `h-full` Klasse auf heroContentLayer und die Flexbox-Zentrierung
+        // (items-center justify-center) sorgen dafür, dass der Inhalt
+        // sich im verbleibenden Raum korrekt zentriert.
+        // Wir müssen auch die Gesamthöhe des heroContentLayer so anpassen,
+        // dass sie 100vh MINUS Header-Höhe beträgt, damit die untere Kante
+        // des sichtbaren Inhalts mit der Viewport-Kante abschließt.
+        // Alternativ kann man das padding-bottom ebenfalls setzen, aber das
+        // kann zu Problemen führen, wenn der Inhalt selbst sehr hoch ist.
+        // Eine bessere Methode ist, dem Content Layer zu sagen, dass seine maximale Höhe
+        // dem verfügbaren Platz entspricht.
+        // Aber da wir flexbox für die Zentrierung nutzen, reicht das padding-top
+        // um den Startpunkt des Inhalts zu verschieben. Die section selbst
+        // bleibt h-screen.
+      }
+    }
+
+    // Event Listener für Mobile Menu (dein bestehender Code, falls vorhanden)
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Aktuelles Jahr für Footer (dein bestehender Code, falls vorhanden)
+    const currentYearElement = document.getElementById('currentYear');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
+
+    // Newsletter Handler (dein bestehender Code, falls vorhanden)
+    function handleNewsletter(event) {
+        event.preventDefault();
+        // Deine Newsletter-Logik hier
+        console.log('Newsletter-Formular abgeschickt'); // Beispiel-Feedback
+        alert('Vielen Dank für Ihre Anmeldung zum Newsletter!');
+    }
+
+    // Führe die Anpassung beim Laden und bei Größenänderung des Fensters aus
+    window.addEventListener('load', adjustHeroContentPadding);
+    window.addEventListener('resize', adjustHeroContentPadding);
+
+    // Wenn deine script.js noch andere, nicht hier gezeigte Logik enthält,
+    // stelle sicher, dass sie auch nach diesem Skriptblock geladen wird oder
+    // integriere diesen Code in deine script.js.
+    // Wenn script.js nur das Mobile Menu, Jahr und Newsletter enthielt,
+    // sind diese Funktionen jetzt hier mit drin.
+  </script>
+
+  <!-- the assistent -->
+  <script src="https://questionansweringusingembeddings.onrender.com/static/chat_widget.js" defer></script>
+
+</body>
+</html>
