@@ -2,10 +2,10 @@
 function handleNewsletter(event) {
   event.preventDefault();
   const email = event.target.querySelector('input[type="email"]').value;
-  
+
   // Simulate successful signup
   alert(`Vielen Dank! Sie wurden erfolgreich mit der E-Mail ${email} für unseren Newsletter angemeldet.`);
-  
+
   // Clear form
   event.target.reset();
 }
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
-  
+
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', function() {
       mobileMenu.classList.toggle('hidden');
@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
     filterButtons.forEach(button => {
       button.addEventListener('click', function() {
         const filter = this.getAttribute('data-filter');
-        
+
         // Update active button
         filterButtons.forEach(btn => btn.classList.remove('active'));
         this.classList.add('active');
-        
+
         // Filter projects
         projectItems.forEach(item => {
           if (filter === 'all' || item.getAttribute('data-category') === filter) {
@@ -60,4 +60,27 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+});
+
+// Funktion zum Anpassen der Hero-Section-Höhe
+function adjustHeroSectionHeight() {
+  const header = document.getElementById('site-header');
+  const heroSection = document.getElementById('hero-section');
+
+  if (header && heroSection) {
+    const headerHeight = header.offsetHeight;
+    // Setze die Höhe der Hero-Section auf den verbleibenden Viewport-Bereich
+    heroSection.style.height = `calc(100vh - ${headerHeight}px)`;
+  }
+}
+
+// Führe die Anpassung beim Laden und bei Größenänderung des Fensters aus
+window.addEventListener('load', function() {
+  adjustHeroContentPadding();
+  adjustHeroSectionHeight();
+});
+
+window.addEventListener('resize', function() {
+  adjustHeroContentPadding();
+  adjustHeroSectionHeight();
 });
