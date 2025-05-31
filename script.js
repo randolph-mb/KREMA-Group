@@ -81,9 +81,15 @@ function adjustHeroSectionHeight() {
   }
 }
 
-// Führe die Anpassung beim Laden und bei Größenänderung des Fensters aus
+// Function to reveal hero content after page load
+function revealHeroContent() {
+  document.body.classList.add('hero-image-loaded');
+}
+
+// Execute adjustments on load and window resize
 window.addEventListener('load', function() {
   adjustHeroSectionHeight();
+  revealHeroContent();
 });
 
 window.addEventListener('resize', function() {

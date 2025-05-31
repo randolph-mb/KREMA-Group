@@ -9,10 +9,27 @@
     content="Wir verwandeln Ihre Wohnträume in maßgefertigte Realität. Erleben Sie individuelle Glaslösungen, die Stil, Funktion und Persönlichkeit vereinen.">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="attached_assets/logoos.png">
+  <!-- Preload hero image for better performance -->
+  <link rel="preload" as="image" href="assets/welcome.png">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Hero loading optimization styles -->
+  <style>
+    #hero-section {
+      background-color: #1F2937; /* Fallback background color while image loads */
+      transition: background-image 0.5s ease-in-out;
+    }
+    #hero-content-layer {
+      opacity: 0; /* Initially invisible */
+      transition: opacity 0.7s ease-in-out 0.3s; /* Smooth fade-in with delay */
+    }
+    body.hero-image-loaded #hero-content-layer {
+      opacity: 1; /* Make content visible when class is set on body */
+    }
+  </style>
 </head>
 
 <body class="font-sans antialiased text-gray-800">
@@ -132,7 +149,7 @@
       style="background-image: url('assets/welcome.png');">
 
       <!-- Content Layer -->
-      <div class="relative z-10 p-6 w-full h-full flex flex-col items-center justify-center bg-black/40">
+      <div id="hero-content-layer" class="relative z-10 p-6 w-full h-full flex flex-col items-center justify-center bg-black/40">
         <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           Mehr Licht. Mehr Raum. Mehr Sie.
         </h1>
