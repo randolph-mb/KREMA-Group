@@ -10,7 +10,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="attached_assets/logoos.png">
   <!-- Preload hero image for better performance -->
-  <link rel="preload" as="image" href="assets/welcome.png">
+  <link rel="preload" as="image" href="assets/welcome-min.png">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Custom CSS -->
@@ -24,7 +24,7 @@
     }
     #hero-content-layer {
       opacity: 0; /* Initially invisible */
-      transition: opacity 0.7s ease-in-out 0.3s; /* Smooth fade-in with delay */
+      transition: opacity 0.5s ease-in-out 0.1s; /* Smooth fade-in with minimal delay */
     }
     body.hero-image-loaded #hero-content-layer {
       opacity: 1; /* Make content visible when class is set on body */

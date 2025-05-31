@@ -11,16 +11,19 @@ function handleNewsletter(event) {
   event.target.reset();
 }
 
-// Set current year in footer
+// Main DOMContentLoaded event handler
 document.addEventListener('DOMContentLoaded', function() {
+  // Hero section setup
+  adjustHeroSectionHeight();
+  revealHeroContent();
+
+  // Set current year in footer
   const currentYearElement = document.getElementById('currentYear');
   if (currentYearElement) {
     currentYearElement.textContent = new Date().getFullYear();
   }
-});
 
-// Mobile menu functionality
-document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu functionality
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
 
@@ -86,8 +89,8 @@ function revealHeroContent() {
   document.body.classList.add('hero-image-loaded');
 }
 
-// Execute adjustments on load and window resize
-window.addEventListener('load', function() {
+// Execute adjustments when DOM is ready and on window resize
+document.addEventListener('DOMContentLoaded', function() {
   adjustHeroSectionHeight();
   revealHeroContent();
 });
