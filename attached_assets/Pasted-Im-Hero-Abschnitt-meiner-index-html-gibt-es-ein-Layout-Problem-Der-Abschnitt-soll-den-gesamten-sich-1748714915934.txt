@@ -1,0 +1,19 @@
+Im Hero-Abschnitt meiner index.html gibt es ein Layout-Problem. Der Abschnitt soll den gesamten sichtbaren Bildschirmbereich unterhalb des sticky Headers ausfüllen, ohne dass ein vertikaler Scrollbalken erscheint, nur um den gesamten Hero-Bereich zu sehen. Aktuell ist es so, dass der Hero-Abschnitt (der als CSS-Hintergrundbild auf einer <section> realisiert ist) durch den darüberliegenden sticky Header scheinbar nach unten gedrückt wird und die Seite dadurch scrollbar wird, obwohl kein neuer Inhalt unterhalb des Hero-Bereichs im initialen Viewport sichtbar sein sollte.
+Betroffene Elemente:
+Der <header>, der sticky top-0 ist (gib ihm die ID site-header, falls nicht vorhanden).
+Die erste <section> direkt nach dem Header, die als Hero-Bereich dient und das Hintergrundbild assets/welcome.png per Inline-Style anzeigt (gib ihr die ID hero-section, falls nicht vorhanden).
+Das innere div innerhalb der hero-section, das den Text, die Buttons und den bg-black/40 Overlay enthält.
+Gewünschtes Verhalten:
+Die hero-section soll ihre Höhe dynamisch anpassen, sodass sie genau den verbleibenden Viewport-Bereich unterhalb des site-header einnimmt. Die Gesamthöhe der Seite soll initial 100vh nicht überschreiten.
+Das Hintergrundbild der hero-section soll diesen neu berechneten Bereich vollständig und zentriert abdecken (bg-cover bg-center).
+Der Inhalt (Texte, Buttons) innerhalb des hero-section (im inneren div) soll weiterhin vertikal und horizontal in diesem angepassten Bereich zentriert sein.
+Die Lösung muss responsiv sein und auch bei einer Größenänderung des Browserfensters korrekt funktionieren.
+Vorgeschlagener Lösungsansatz (bitte implementieren):
+Verwende JavaScript, um dieses Problem zu lösen:
+Entferne die Tailwind-Klasse h-screen von der <section id="hero-section">, da ihre Höhe dynamisch gesetzt wird.
+Schreibe eine JavaScript-Funktion, die:
+a. Die tatsächliche Höhe des site-header (mittels offsetHeight) ermittelt.
+b. Die Höhe der hero-section auf calc(100vh - <HeaderHöheInPx>px) setzt.
+Diese Funktion soll beim Laden der Seite (window.addEventListener('load', ...) ) und bei jeder Größenänderung des Fensters (window.addEventListener('resize', ...)) ausgeführt werden.
+Stelle sicher, dass das innere div mit dem Content (bg-black/40) mit h-full die volle Höhe der angepassten hero-section einnimmt und seine Flexbox-Eigenschaften (flex flex-col items-center justify-center) den Inhalt korrekt zentrieren. Ein zusätzliches padding-top auf diesem inneren Div ist für diese Lösung nicht erforderlich und sollte entfernt oder auf 0 gesetzt werden, falls vorhanden.
+Integriere den JavaScript-Code sauber, vorzugsweise in einem <script>-Tag vor dem schließenden </body>-Tag oder in der existierenden script.js-Datei.
