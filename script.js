@@ -1,4 +1,5 @@
-// Newsletter form handler (dummy function)
+
+// Newsletter form handler
 function handleNewsletter(event) {
   event.preventDefault();
   const email = event.target.querySelector('input[type="email"]').value;
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Mobile menu functionality (if not already implemented)
+// Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -26,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', function() {
       mobileMenu.classList.toggle('hidden');
+      // Optional: Hero-Section nach Menü-Toggle neu anpassen
+      setTimeout(adjustHeroSectionHeight, 50);
     });
   }
 
@@ -71,16 +74,18 @@ function adjustHeroSectionHeight() {
     const headerHeight = header.offsetHeight;
     // Setze die Höhe der Hero-Section auf den verbleibenden Viewport-Bereich
     heroSection.style.height = `calc(100vh - ${headerHeight}px)`;
+  } else {
+    // Debugging-Ausgaben
+    if (!header) console.error('Header-Element mit ID "site-header" nicht gefunden.');
+    if (!heroSection) console.error('Hero-Section-Element mit ID "hero-section" nicht gefunden.');
   }
 }
 
 // Führe die Anpassung beim Laden und bei Größenänderung des Fensters aus
 window.addEventListener('load', function() {
-  adjustHeroContentPadding();
   adjustHeroSectionHeight();
 });
 
 window.addEventListener('resize', function() {
-  adjustHeroContentPadding();
   adjustHeroSectionHeight();
 });
