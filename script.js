@@ -1,3 +1,31 @@
+
+// Funktion zum Anpassen des Paddings des Hero-Inhalts
+function adjustHeroContentPadding() {
+  const header = document.getElementById('site-header');
+  const heroContentLayer = document.getElementById('hero-content-layer');
+
+  if (header && heroContentLayer) {
+    const headerHeight = header.offsetHeight;
+    // Wichtig: Wir setzen das Padding-Top des Content-Layers,
+    // NICHT der gesamten Section.
+    heroContentLayer.style.paddingTop = `${headerHeight}px`;
+
+    // Die `h-full` Klasse auf heroContentLayer und die Flexbox-Zentrierung
+    // (items-center justify-center) sorgen dafür, dass der Inhalt
+    // sich im verbleibenden Raum korrekt zentriert.
+    // Wir müssen auch die Gesamthöhe des heroContentLayer so anpassen,
+    // dass sie 100vh MINUS Header-Höhe beträgt, damit die untere Kante
+    // des sichtbaren Inhalts mit der Viewport-Kante abschließt.
+    // Alternativ kann man das padding-bottom ebenfalls setzen, aber das
+    // kann zu Problemen führen, wenn der Inhalt selbst sehr hoch ist.
+    // Eine bessere Methode ist, dem Content Layer zu sagen, dass seine maximale Höhe
+    // dem verfügbaren Platz entspricht.
+    // Aber da wir flexbox für die Zentrierung nutzen, reicht das padding-top
+    // um den Startpunkt des Inhalts zu verschieben. Die section selbst
+    // bleibt h-screen.
+  }
+}
+
 // Newsletter form handler (dummy function)
 function handleNewsletter(event) {
   event.preventDefault();
@@ -61,3 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Führe die Anpassung beim Laden und bei Größenänderung des Fensters aus
+window.addEventListener('load', adjustHeroContentPadding);
+window.addEventListener('resize', adjustHeroContentPadding);
