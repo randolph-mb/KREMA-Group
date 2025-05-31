@@ -32,55 +32,67 @@
         <a href="index.html"
           class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Startseite</a>
 
-        <!-- Lösungen Dropdown -->
-        <div class="relative group">
-          <button
-            class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 flex items-center tracking-wide">
-            Lösungen
-            <svg class="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:rotate-180" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div
-            class="absolute top-full left-0 bg-white shadow-xl rounded-xl py-3 min-w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100/50">
-            <a href="duschkabinen.html"
-              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Innenausbau & Gestaltung</a>
-            <a href="glasvordaecher.html"
-              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Haustechnik & Smartliving</a>
-            <a href="bruestungen.html"
-              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Naturstein & Fliesen</a>
-            <a href="glaselemente.html"
-              class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Denkmalpflege & Spezialarbeiten</a>
+        <!-- über uns -->
+        <div class="hidden lg:flex items-center space-x-10">
+          <a href="index.html"
+            class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide"> über
+            uns
+          </a>
+
+
+          <!-- Lösungen Dropdown -->
+          <div class="relative group">
+            <button
+              class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 flex items-center tracking-wide">
+              Lösungen
+              <svg class="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:rotate-180" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute top-full left-0 bg-white shadow-xl rounded-xl py-3 min-w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100/50">
+              <a href="duschkabinen.html"
+                class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Innenausbau
+                & Gestaltung</a>
+              <a href="glasvordaecher.html"
+                class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Haustechnik
+                & Smartliving</a>
+              <a href="bruestungen.html"
+                class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Naturstein
+                & Fliesen</a>
+              <a href="glaselemente.html"
+                class="block px-5 py-2.5 text-gray-700 hover:bg-gray-50 hover:text-accent-color transition-all duration-200 font-medium">Denkmalpflege
+                & Spezialarbeiten</a>
+            </div>
+          </div>
+
+
+          <a href="projekte.html"
+            class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Projekte</a>
+          <a href="kontaktformular.html"
+            class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Kontakt</a>
+        </div>
+
+        <!-- CTA Button + Mobile Menu Button -->
+        <div class="flex items-center space-x-6">
+          <!-- CTA -->
+          <a href="kontaktformular.html"
+            class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-7 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md tracking-wide">
+            Beratung anfordern
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button id="mobile-menu-button"
+              class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
           </div>
         </div>
-
-
-        <a href="projekte.html"
-          class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Projekte</a>
-        <a href="kontaktformular.html"
-          class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Kontakt</a>
-      </div>
-
-      <!-- CTA Button + Mobile Menu Button -->
-      <div class="flex items-center space-x-6">
-        <!-- CTA -->
-        <a href="kontaktformular.html"
-          class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-7 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md tracking-wide">
-          Beratung anfordern
-        </a>
-
-        <!-- Mobile Menu Button -->
-        <div class="lg:hidden">
-          <button id="mobile-menu-button"
-            class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
     </nav>
 
     <!-- Mobile Menu -->
@@ -91,15 +103,16 @@
         <div class="border-l-2 border-gray-200 pl-4 space-y-2">
           <p class="text-gray-500 text-sm font-medium">Lösungen</p>
           <a href="duschkabinen.html"
-            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Duschkabinen aus Glas</a>
+            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Innenausbau &
+            Gestaltung</a>
           <a href="glasvordaecher.html"
-            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Glasvordächer &
-            Terrassen</a>
+            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Haustechnik &
+            Smartliving</a>
           <a href="bruestungen.html"
-            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Glasbrüstungen</a>
+            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Naturstein & Fliesen</a>
           <a href="glaselemente.html"
-            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Glaselemente für
-            Wohnräume</a>
+            class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Denkmalpflege &
+            Spezialarbeiten</a>
         </div>
         <a href="#versprechen"
           class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Unsere
@@ -120,8 +133,9 @@
 
   <main>
     <!-- Hero Section -->
-    <section id="hero-section" class="relative flex items-center justify-center text-white text-center overflow-hidden bg-cover bg-center"
-             style="background-image: url('assets/welcome.png');">
+    <section id="hero-section"
+      class="relative flex items-center justify-center text-white text-center overflow-hidden bg-cover bg-center"
+      style="background-image: url('assets/welcome.png');">
 
       <!-- Content Layer -->
       <div class="relative z-10 p-6 w-full h-full flex flex-col items-center justify-center bg-black/40">
@@ -137,8 +151,7 @@
             class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg">
             Kostenlose Beratung anfordern
           </a>
-          <a href="projekte.html"
-            class="text-white hover:text-gray-200 font-medium underline transition duration-300">
+          <a href="projekte.html" class="text-white hover:text-gray-200 font-medium underline transition duration-300">
             Projekte entdecken →
           </a>
         </div>
@@ -212,10 +225,10 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          <!-- Duschkabinen -->
-          <a href="duschkabinen.html" class="group">
+          <!-- Innenausbau & Gestaltung -->
+          <a href="duschkabinen.html" class="group block"> <!-- 'block' hinzugefügt für besseres Layout-Verhalten -->
             <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2 h-full flex flex-col"> <!-- h-full und flex-col hinzugefügt -->
               <div class="h-48 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
                 <svg class="w-16 h-16 text-accent-color group-hover:scale-110 transition-transform duration-300"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -224,16 +237,33 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 13h8"></path>
                 </svg>
               </div>
-              <div class="p-6">
-                <h3
-                  class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-accent-color transition-colors duration-300">
-                  Duschkabinen aus Glas</h3>
-                <p class="text-gray-600 text-sm">Elegante Duschwände und Walk-In Lösungen für Ihr Traumbad</p>
+              <div class="p-6 flex-grow flex flex-col"> <!-- flex-grow und flex flex-col hinzugefügt -->
+                <div> <!-- Wrapper für den oberen Inhalt -->
+                  <h3
+                    class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-accent-color transition-colors duration-300">
+                    Innenausbau & Gestaltung</h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    Ob neue Raumaufteilung, stilvolle Wandgestaltung oder maßgefertigter Möbelbau – wir bringen Funktion und Design in Einklang.
+                  </p>
+                  <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                    <li>Trockenbauarbeiten</li>
+                    <li>Malerarbeiten inkl. Wandmalerei & Stuck</li>
+                    <li>Tischlerarbeiten inkl. Möbelbau</li>
+                    <li>Bodenbeläge: Textil, Holz, Laminat, Linoleum, PVC</li>
+                  </ul>
+                </div>
+                <!-- Visueller "Mehr erfahren" Hinweis, kein echter Link -->
+                <div class="mt-auto pt-3"> <!-- pt-3 für Abstand nach oben, mt-auto schiebt es nach unten -->
+                  <span
+                     class="inline-block text-accent-color font-semibold text-sm group-hover:underline">
+                    Mehr erfahren →
+                  </span>
+                </div>
               </div>
             </div>
           </a>
 
-          <!-- Glasvordächer -->
+          <!-- Haustechnik & Smartliving -->
           <a href="glasvordaecher.html" class="group">
             <div
               class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
@@ -248,13 +278,13 @@
               <div class="p-6">
                 <h3
                   class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-accent-color transition-colors duration-300">
-                  Glasvordächer & Terrassen</h3>
+                  Haustechnik & Smartliving</h3>
                 <p class="text-gray-600 text-sm">Eleganter Wetterschutz für Eingänge und Außenbereiche</p>
               </div>
             </div>
           </a>
 
-          <!-- Glasbrüstungen -->
+          <!-- Naturstein & fliesen-->
           <a href="bruestungen.html" class="group">
             <div
               class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
@@ -269,13 +299,13 @@
               <div class="p-6">
                 <h3
                   class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-accent-color transition-colors duration-300">
-                  Glasbrüstungen</h3>
+                  Naturstein & Fliesen</h3>
                 <p class="text-gray-600 text-sm">Sichere Geländer mit ungetrübtem Panoramablick</p>
               </div>
             </div>
           </a>
 
-          <!-- Glaselemente -->
+          <!-- Denkmalpflege & Spezialarbeiten -->
           <a href="glaselemente.html" class="group">
             <div
               class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
@@ -289,7 +319,7 @@
               <div class="p-6">
                 <h3
                   class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-accent-color transition-colors duration-300">
-                  Glaselemente für Wohnräume</h3>
+                  Denkmalpflege & Spezialarbeiten</h3>
                 <p class="text-gray-600 text-sm">Raumteiler, Glastüren und individuelle Designelemente</p>
               </div>
             </div>
@@ -317,130 +347,12 @@
           </a>
         </div>
         <div class="md:w-1/2 flex justify-center">
-          <img src="assets/precision-measurement.jpg" alt="Symbol für Präzision und Maßarbeit bei Glaslösungen"
+          <img src="assets/precision-measurement.png" alt="Symbol für Präzision und Maßarbeit bei Glaslösungen"
             class="rounded-lg shadow-xl">
         </div>
       </div>
     </section>
 
-    <!-- Vertrauensfaktoren Section -->
-    <section class="py-16 md:py-24 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Warum Kunden uns vertrauen</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Qualität -->
-          <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-            <div class="bg-accent-color/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Qualität</h3>
-            <p class="text-gray-600">Hochwertige Materialien & präzise Fertigung für langlebige Schönheit</p>
-          </div>
-          <!-- Erfahrung -->
-          <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-            <div class="bg-accent-color/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Erfahrung</h3>
-            <p class="text-gray-600">Über 20 Jahre Expertise in individuellen Glaslösungen</p>
-          </div>
-          <!-- Sicherheit -->
-          <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-            <div class="bg-accent-color/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                </path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Sicherheit</h3>
-            <p class="text-gray-600">Zertifiziertes Sicherheitsglas mit geprüfter Statik</p>
-          </div>
-          <!-- Service -->
-          <div class="bg-white p-8 rounded-xl shadow-lg text-center">
-            <div class="bg-accent-color/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                </path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Service</h3>
-            <p class="text-gray-600">Persönliche Beratung & professionelle Montage</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Process Section -->
-    <section class="py-16 md:py-24 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">So einfach verwirklichen wir
-          gemeinsam Ihre Glasvision:</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
-          <!-- Step 1 -->
-          <div class="text-center p-6">
-            <div class="flex justify-center mb-4">
-              <div
-                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
-                1</div>
-            </div>
-            <img src="assets/icons/speech-bubble.png" alt="Beratung & Ideenfindung Icon"
-              class="h-12 w-12 mx-auto mb-3" />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Beratung & Ideenfindung</h3>
-            <p class="text-gray-700">Sie teilen uns Ihre Wünsche mit, wir inspirieren Sie mit Möglichkeiten.</p>
-          </div>
-          <!-- Step 2 -->
-          <div class="text-center p-6">
-            <div class="flex justify-center mb-4">
-              <div
-                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
-                2</div>
-            </div>
-            <img src="assets/icons/blueprint.png" alt="Planung & Präzisionsaufmaß Icon"
-              class="h-12 w-12 mx-auto mb-3" />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Planung & Präzisionsaufmaß</h3>
-            <p class="text-gray-700">Vor Ort nehmen wir mit Lasertechnik exakt Maß und planen jedes Detail.</p>
-          </div>
-          <!-- Step 3 -->
-          <div class="text-center p-6">
-            <div class="flex justify-center mb-4">
-              <div
-                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
-                3</div>
-            </div>
-            <img src="assets/icons/maintenance.png" alt="Maßfertigung Icon" class="h-12 w-12 mx-auto mb-3" />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Maßfertigung in Meisterqualität</h3>
-            <p class="text-gray-700">Ihr Unikat wird in unserer Werkstatt mit Sorgfalt und Expertise gefertigt.</p>
-          </div>
-          <!-- Step 4 -->
-          <div class="text-center p-6">
-            <div class="flex justify-center mb-4">
-              <div
-                class="bg-accent-color text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
-                4</div>
-            </div>
-            <img src="assets/icons/construction-worker.png" alt="Montage & Übergabe Icon"
-              class="h-12 w-12 mx-auto mb-3" />
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Fachgerechte Montage & Übergabe</h3>
-            <p class="text-gray-700">Unsere Profis installieren Ihre Glaslösung sauber, pünktlich und perfekt.</p>
-          </div>
-        </div>
-        <p class="text-center text-lg text-gray-700 mt-12 max-w-3xl mx-auto">
-          Wir hören Ihnen zu, denken mit und finden Lösungen, die wirklich zu Ihnen passen. Seit über XX Jahren
-          gestalten wir mit individuellem Glasdesign die Wohnräume und Außenbereiche unserer Kunden – mit voller
-          Transparenz und einem Ergebnis, das lange Freude bereitet.
-        </p>
-      </div>
-    </section>
 
 
 
@@ -533,14 +445,15 @@
           <div>
             <h4 class="text-lg font-semibold text-white mb-4">Unsere Lösungen</h4>
             <ul class="space-y-3">
-              <li><a href="duschkabinen.html"
-                  class="text-gray-400 hover:text-white transition duration-300">Innenausbau & Gestaltung</a></li>
+              <li><a href="duschkabinen.html" class="text-gray-400 hover:text-white transition duration-300">Innenausbau
+                  & Gestaltung</a></li>
               <li><a href="glasvordaecher.html"
                   class="text-gray-400 hover:text-white transition duration-300">Haustechnik & Smart Living</a></li>
-              <li><a href="bruestungen.html"
-                  class="text-gray-400 hover:text-white transition duration-300">Naturstein & Fliesen</a></li>
+              <li><a href="bruestungen.html" class="text-gray-400 hover:text-white transition duration-300">Naturstein &
+                  Fliesen</a></li>
               <li><a href="glaselemente.html"
-                  class="text-gray-400 hover:text-white transition duration-300">Denkmalpflege & Spezialarbeiten</a></li>
+                  class="text-gray-400 hover:text-white transition duration-300">Denkmalpflege & Spezialarbeiten</a>
+              </li>
             </ul>
           </div>
 
