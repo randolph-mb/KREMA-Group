@@ -159,8 +159,16 @@ async function handleContactFormSubmit(event) {
 function adjustHeroSectionHeight() {
   const header = document.getElementById('site-header'); // Ensure this ID exists in your HTML
   const heroSection = document.getElementById('hero-section'); // Ensure this ID exists
+  const contactForm = document.getElementById('contact-form'); // Check if this is the contact page
 
   if (header && heroSection) {
+    // Skip full-height adjustment on contact page
+    if (contactForm) {
+      // Contact page: don't apply minHeight adjustment, let natural height prevail
+      heroSection.style.minHeight = '';
+      return;
+    }
+    
     const headerHeight = header.offsetHeight;
     // Use minHeight for flexibility, ensures content below isn't cut off if hero content is taller
     heroSection.style.minHeight = `calc(100vh - ${headerHeight}px)`;
