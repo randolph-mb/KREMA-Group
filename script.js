@@ -20,8 +20,140 @@ function handleNewsletter(event) {
   form.reset();
 }
 
+// Helper function to show/hide field errors for the contact form
+function showFieldError(fieldId, message) {
+  const errorDiv = document.getElementById(`${fieldId}-error`);
+  if (errorDiv) {
+    errorDiv.textContent = message;
+    errorDiv.classList.remove('hidden');
+  }
+  const inputField = document.getElementById(fieldId);
+  if (inputField) {
+    inputField.classList.add('border-red-500', 'focus:border-red-500');
+    inputField.classList.remove('focus:border-accent-color');
+  }
+}
 
+// Helper function to clear a single field error
+function clearFieldError(fieldId) {
+  const errorDiv = document.getElementById(`${fieldId}-error`);
+  if (errorDiv) {
+    errorDiv.textContent = '';
+    errorDiv.classList.add('hidden');
+  }
+  const inputField = document.getElementById(fieldId);
+  if (inputField) {
+    inputField.classList.remove('border-red-500', 'focus:border-red-500');
+    inputField.classList.add('focus:border-accent-color');
+  }
+}
 
+// Helper function to clear all contact form errors
+function clearAllContactErrors() {
+  const fields = ['name', 'email', 'message', 'privacy'];
+  fields.forEach(clearFieldError);
+}
+
+// Contact Form Submission Handler with AJAX to Formspree
+async function handleContactFormSubmit(event) {
+  event.preventDefault();
+  clearAllContactErrors();
+
+  const form = event.target;
+  const submitButton = form.querySelector('button[type="submit"]');
+  const submitButtonText = document.getElementById('submit-text');
+  const submitButtonLoading = document.getElementById('submit-loading');
+  const successMessageDiv = document.getElementById('success-message');
+
+  // Client-Side Validation
+  let isValid = true;
+  const nameField = form.name;
+  const emailField = form.email;
+  const messageField = form.message;
+  const privacyField = form.privacy;
+
+  const name = nameField ? nameField.value.trim() : '';
+  const email = emailField ? emailField.value.trim() : '';
+  const message = messageField ? messageField.value.trim() : '';
+  const privacy = privacyField ? privacyField.checked : false;
+
+  if (nameField && !name) {
+    showFieldError('name', 'Bitte geben Sie Ihren Namen ein.');
+    isValid = false;
+  }
+  if (emailField && !email) {
+    showFieldError('email', 'Bitte geben Sie Ihre E-Mail-Adresse ein.');
+    isValid = false;
+  } else if (emailField && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    showFieldError('email', 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+    isValid = false;
+  }
+  if (messageField && !message) {
+    showFieldError('message', 'Bitte geben Sie Ihre Nachricht ein.');
+    isValid = false;
+  }
+  if (privacyField && !privacy) {
+    showFieldError('privacy', 'Sie müssen der Datenschutzerklärung zustimmen.');
+    isValid = false;
+  }
+
+  if (!isValid) {
+    return;
+  }
+
+  // Prepare for submission
+  if (submitButton) submitButton.disabled = true;
+  if (submitButtonText) submitButtonText.classList.add('hidden');
+  if (submitButtonLoading) submitButtonLoading.classList.remove('hidden');
+  if (successMessageDiv) successMessageDiv.classList.add('hidden');
+
+  try {
+    // Create FormData from the form
+    const formData = new FormData(form);
+    
+    // Send to Formspree via AJAX
+    const response = await fetch('https://formspree.io/f/mjkrkyaq', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      // Success - show custom success message
+      if (successMessageDiv) {
+        successMessageDiv.classList.remove('hidden');
+        successMessageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      form.reset();
+      clearAllContactErrors();
+    } else {
+      // Handle Formspree validation errors
+      const data = await response.json();
+      if (data.errors) {
+        // Display Formspree field errors
+        data.errors.forEach(error => {
+          if (error.field && document.getElementById(error.field)) {
+            showFieldError(error.field, error.message);
+          } else {
+            showFieldError('message', error.message || 'Ein Fehler ist aufgetreten.');
+          }
+        });
+      } else {
+        showFieldError('message', 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.');
+      }
+    }
+  } catch (error) {
+    console.error('Form submission error:', error);
+    showFieldError('message', 'Netzwerkfehler. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.');
+  } finally {
+    // Reset button state
+    if (submitButton) submitButton.disabled = false;
+    if (submitButtonText) submitButtonText.classList.remove('hidden');
+    if (submitButtonLoading) submitButtonLoading.classList.add('hidden');
+  }
+}
 
 // Funktion zum Anpassen der Hero-Section-Höhe
 function adjustHeroSectionHeight() {
@@ -80,6 +212,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   
+
+  // Contact Form setup with AJAX submission to Formspree
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', handleContactFormSubmit);
+  }
 
   // Newsletter Form setup (if you have a dedicated newsletter form with this ID)
   const newsletterForm = document.getElementById('newsletter-form'); // Assuming an ID for a newsletter form
