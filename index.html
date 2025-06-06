@@ -34,6 +34,21 @@
   </head>
 
   <body class="font-sans antialiased text-gray-800">
+    <!-- SCRIPT ZUR OPTIMIERUNG DES HERO-LADEVORGANGS -->
+    <script>
+      (function () {
+        const heroImageSrc = "assets/welcome-min.png"; // Stelle sicher, dass der Pfad korrekt ist
+        const image = new Image();
+        image.src = heroImageSrc;
+        image.onload = function () {
+          document.body.classList.add("hero-image-loaded");
+        };
+        // Optional: Fallback, falls das Bild nicht lädt
+        image.onerror = function () {
+          document.body.classList.add("hero-image-loaded");
+        };
+      })();
+    </script>
     <!-- Header Section -->
     <header
       id="site-header"
@@ -223,7 +238,7 @@
       <!-- Hero Section -->
       <section
         id="hero-section"
-        class="relative flex items-center justify-center text-white text-center overflow-hidden bg-cover bg-center"
+        class="min-h-screen relative flex items-center justify-center text-white text-center overflow-hidden bg-cover bg-center"
         style="background-image: url(&quot;assets/welcome-min.png&quot;)"
       >
         <!-- Content Layer -->
@@ -425,10 +440,10 @@
                     <ul
                       class="list-disc list-inside text-gray-600 text-sm space-y-1"
                     >
-                      <li>Trockenbauarbeiten</li>
-                      <li>Malerarbeiten inkl. Wandmalerei & Stuck</li>
-                      <li>Tischlerarbeiten inkl. Möbelbau</li>
-                      <li>Bodenbeläge: Textil, Holz, Laminat, Linoleum, PVC</li>
+                      <li>Raumstruktur neu gedacht</li>
+                      <li>Farbe trifft Charakter</li>
+                      <li>Maßarbeit aus Meisterhand</li>
+                      <li>Der passende Boden für Ihre Räume</li>
                     </ul>
                   </div>
                   <!-- Visueller "Mehr erfahren" Hinweis, kein echter Link -->
