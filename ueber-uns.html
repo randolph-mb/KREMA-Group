@@ -5,328 +5,299 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über uns - Hinter jeder Glaslösung steht Leidenschaft | IAS</title>
-  <meta name="description" content="Lernen Sie das Team hinter IAS kennen. Seit über 20 Jahren verwandeln wir Visionen in maßgeschneiderte Glaslösungen - mit Präzision, Vertrauen und Leidenschaft für das Detail.">
+  <title>Über uns - IAS Teil der Crema Group</title>
+  <meta name="description" content="Erfahren Sie mehr über IAS - Innen Ausbau Service GmbH und die Crema Group. Unsere Vision, Werte und Philosophie für innovative Glaslösungen.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-sans antialiased text-gray-800">
+<body class="font-sans text-gray-800">
+        <!-- Header Section -->
+        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
+          <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 
-  <!-- Header Section -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center">
-        <img src="attached_assets/logoos.png" alt="IAS Logo"
-          class="h-20 w-auto bg-transparent object-contain transition-opacity duration-300 hover:opacity-90">
-      </a>
-      
-      <!-- Navigation -->
-      <div class="hidden lg:flex items-center space-x-8">
-        <a href="index.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Startseite</a>
-        <a href="ueber-uns.html" class="text-accent-color font-medium transition duration-300">Über uns</a>
-        <!-- Lösungen Dropdown -->
-        <div class="relative group">
-          <button class="text-gray-700 hover:text-accent-color font-medium transition duration-300 flex items-center">
-            Lösungen
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 min-w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-            <a href="innenausbau.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Innenausbau & Gestaltung</a>
-            <a href="haustechnik.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Haustechnik & Smartliving</a>
-            <a href="naturstein.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Naturstein & Fliesen</a>
-            <a href="denkmal.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Denkmalpflege & Spezialarbeiten</a>
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+              <img src="attached_assets/logoos.png" alt="IAS Logo"
+                class="h-20 w-auto bg-transparent object-contain transition-opacity duration-300 hover:opacity-90">
+            </a>
+
+        <!-- Navigation -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Startseite</a>
+          <a href="ueber-uns.html"
+            class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Über uns</a>
+
+          <!-- Lösungen Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 flex items-center tracking-wide">
+              Lösungen
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 min-w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <a href="innenausbau.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Innenausbau & Gestaltung</a>
+              <a href="haustechnik.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Haustechnik & Smartliving</a>
+              <a href="naturstein.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color">Naturstein & Fliesen</a>
+              <a href="denkmalpflege.html" class="block px-4 py-2 text-accent-color bg-gray-50 hover:text-accent-color">Denkmalpflege & Spezialarbeiten</a>
+            </div>
           </div>
+
+          <a href="projekte.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Projekte</a>
+          <a href="kontaktformular.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Kontakt</a>
         </div>
-        
-        <a href="projekte.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Projekte</a>
-        <a href="kontaktformular.html" class="text-gray-700 hover:text-accent-color font-medium transition duration-300">Kontakt</a>
+
+            <!-- CTA Button + Mobile Menu Button -->
+              <div class="flex items-center space-x-4">
+                <a href="kontaktformular.html" class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
+                  Beratung anfordern
+                </a>
+
+                <div class="lg:hidden">
+                  <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </nav>
+
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-accent-color focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
       </div>
-      
-      <!-- CTA Button + Mobile Menu Button -->
-      <div class="flex items-center space-x-4">
-        <a href="kontaktformular.html" class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
-          Beratung anfordern
-        </a>
-        
-        <div class="lg:hidden">
-          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
+
+      <!-- Mobile Navigation -->
+      <nav id="mobile-menu" class="md:hidden mt-4 hidden">
+        <div class="flex flex-col space-y-4">
+          <a href="index.html" class="text-gray-700 hover:text-accent-color transition duration-300">Home</a>
+          <a href="ueber-uns.html" class="text-accent-color font-medium">Über uns</a>
+          <a href="projekte.html" class="text-gray-700 hover:text-accent-color transition duration-300">Projekte</a>
+          <a href="innenausbau.html" class="text-gray-700 hover:text-accent-color transition duration-300">Innenausbau</a>
+          <a href="haustechnik.html" class="text-gray-700 hover:text-accent-color transition duration-300">Haustechnik</a>
+          <a href="naturstein.html" class="text-gray-700 hover:text-accent-color transition duration-300">Naturstein</a>
+          <a href="denkmalpflege.html" class="text-gray-700 hover:text-accent-color transition duration-300">Denkmalpflege</a>
+          <a href="kontaktformular.html" class="bg-accent-color text-white px-6 py-2 rounded-lg hover:bg-yellow-600 transition duration-300 text-center">Kontakt</a>
         </div>
-      </div>
-    </nav>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
-      <div class="px-6 py-4 space-y-3">
-        <a href="index.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Startseite</a>
-        <a href="ueber-uns.html" class="block text-accent-color font-medium py-2 transition duration-300">Über uns</a>
-        <div class="border-l-2 border-accent-color pl-4 space-y-2">
-          <p class="text-gray-500 text-sm font-medium">Lösungen</p>
-          <a href="innenausbau.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Innenausbau & Gestaltung</a>
-          <a href="haustechnik.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Haustechnik & Smartliving</a>
-          <a href="naturstein.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Naturstein & Fliesen</a>
-          <a href="denkmalpflege.html" class="block text-gray-700 hover:text-accent-color py-1 transition duration-300">Denkmalpflege & Spezialarbeiten</a>
-        </div>
-        <a href="projekte.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Projekte</a>
-        <a href="kontaktformular.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Kontakt</a>
-        <div class="pt-4 border-t border-gray-200">
-          <a href="kontaktformular.html" class="block w-full bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300">
-            Beratung anfordern
-          </a>
-        </div>
-      </div>
+      </nav>
     </div>
   </header>
 
   <main>
     <!-- Hero Section -->
-    <section class="min-h-screen relative flex items-center justify-center text-white text-center overflow-hidden bg-cover bg-center" style="background-image: url('assets/precision-measurement.png')">
-      <!-- Content Layer -->
-      <div class="relative z-10 p-6 w-full h-full flex flex-col items-center justify-center bg-black/50">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Hinter jeder Glaslösung steht ein Mensch,<br>
-          <span class="text-accent-color">der Licht gestalten will.</span>
+    <section id="hero-section" class="relative bg-gradient-to-br from-gray-50 to-gray-100 py-20 md:py-32">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+          Mehr als Glas. Mehr als Innenausbau.
+          <span class="text-accent-color">Eine Philosophie, die verbindet.</span>
         </h1>
-        <p class="text-lg md:text-xl mb-8 max-w-3xl leading-relaxed">
-          Seit über zwei Jahrzehnten verwandeln wir Visionen in maßgeschneiderte Realität. <br>
-          Mit Leidenschaft für das Detail und dem Mut, Unmögliches möglich zu machen.
+        <p class="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
+          Seit über zwei Jahrzehnten verwandeln wir Visionen in Realität. Als Teil der Crema Group verbinden wir traditionelles Handwerk mit innovativer Technik – für Räume, die bewegen.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 items-center">
-          <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg">
-            Lernen Sie uns kennen
-          </a>
-          <a href="projekte.html" class="text-white hover:text-gray-200 font-medium underline transition duration-300">
-            Unsere Projekte entdecken →
-          </a>
+        <div class="text-sm text-accent-color font-medium">
+          IAS – Teil der Krema Group
         </div>
       </div>
     </section>
 
-    <!-- Intro Statement Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Wir sind die, die Maßarbeit ernst nehmen. Die, die zuhören. Die, die das Unsichtbare in Glas sichtbar machen.
-        </h2>
-        <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-          Als Teil der Crema Group verbinden wir traditionelles Handwerk mit innovativer Technik. 
-          Jedes Projekt ist für uns mehr als nur Arbeit – es ist die Verwirklichung einer Vision.
-        </p>
-      </div>
-    </section>
-
-    <!-- Unsere Werte Section -->
+    <!-- Über IAS Section -->
     <section class="py-16 md:py-24">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Was uns antreibt</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Präzision -->
-          <div class="text-center p-6">
-            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Präzision</h3>
-            <p class="text-gray-700">
-              Millimetergenau arbeiten wir mit moderner Lasertechnik. 
-              Jede Messung, jeder Schnitt, jede Montage erfolgt mit der Sorgfalt, die Ihre Vision verdient.
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">IAS – Innen Ausbau Service GmbH</h2>
+            <p class="text-lg text-gray-700">
+              Wo Präzision auf Leidenschaft trifft
             </p>
           </div>
 
-          <!-- Vertrauen -->
-          <div class="text-center p-6">
-            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-              </svg>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <!-- KI-Bildprompt: Modernes Glasatelier mit Handwerkern bei der Arbeit, präzise Vermessung und Glasschnitt, hochwertige Werkzeuge, warmes Licht -->
+              <img src="assets/projects/ias-werkstatt.jpg" alt="IAS Werkstatt mit Handwerkern bei präziser Glasbearbeitung" class="w-full h-80 object-cover rounded-xl shadow-xl">
             </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Vertrauen</h3>
-            <p class="text-gray-700">
-              Transparenz in der Kommunikation, Zuverlässigkeit in der Umsetzung. 
-              Seit über 20 Jahren bauen wir auf langfristige Partnerschaften mit unseren Kunden.
-            </p>
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-6">Was uns ausmacht</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="w-3 h-3 bg-accent-color rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Maßgeschneiderte Glaslösungen</h4>
+                    <p class="text-gray-600">Von eleganten Duschkabinen über repräsentative Glasvordächer bis hin zu funktionalen Brüstungen – jedes Projekt ist einzigartig.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-3 h-3 bg-accent-color rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Präzision in jedem Detail</h4>
+                    <p class="text-gray-600">Mit modernster Messtechnik und jahrzehntelanger Erfahrung garantieren wir millimetergenaue Passform.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-3 h-3 bg-accent-color rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Kundenfokus als Philosophie</h4>
+                    <p class="text-gray-600">Ihre Vision steht im Mittelpunkt. Wir hören zu, beraten ehrlich und liefern Lösungen, die überzeugen.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Gestaltungskraft -->
-          <div class="text-center p-6">
-            <div class="w-16 h-16 bg-accent-color/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
+          <!-- Unsere Werte -->
+          <div class="bg-gray-50 rounded-2xl p-8 md:p-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Unsere Werte</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">Q</div>
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Qualität</h4>
+                <p class="text-gray-600">Kompromisslose Materialien und Verarbeitung für langlebige Lösungen.</p>
+              </div>
+              <div class="text-center">
+                <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">P</div>
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Präzision</h4>
+                <p class="text-gray-600">Millimetergenaue Arbeit dank modernster Technik und Handwerkskunst.</p>
+              </div>
+              <div class="text-center">
+                <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">V</div>
+                <h4 class="text-lg font-semibold text-gray-800 mb-3">Vertrauen</h4>
+                <p class="text-gray-600">Zuverlässige Partnerschaft von der ersten Beratung bis zur Montage.</p>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Gestaltungskraft</h3>
-            <p class="text-gray-700">
-              Wir denken über das Funktionale hinaus. Jede Glaslösung wird zum gestalterischen Element, 
-              das Räume verwandelt und Persönlichkeit verleiht.
-            </p>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- So arbeiten wir Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
+    <!-- Die Crema Group Section -->
+    <section class="py-16 md:py-24 bg-gray-800 text-white">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">So entstehen einzigartige Lösungen</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Verstehen & Beraten</h3>
-            <p class="text-gray-700">
-              Wir hören zu. Ihre Wünsche, Ihr Raum, Ihre Vision – alles fließt in unsere Beratung ein. 
-              Gemeinsam entwickeln wir Ideen, die Sie begeistern werden.
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Die Crema Group – Vision & Ursprung</h2>
+            <p class="text-lg text-gray-300">
+              Eine Unternehmensgruppe mit Weitblick und Tradition
             </p>
           </div>
 
-          <div class="text-center">
-            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Planen & Gestalten</h3>
-            <p class="text-gray-700">
-              Mit modernster Technik vermessen wir millimetergenau und entwickeln 
-              maßgeschneiderte Lösungen, die perfekt zu Ihrem Raum passen.
-            </p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h3 class="text-2xl font-semibold mb-6">Die Vision von Eugen Kretschmann</h3>
+              <p class="text-gray-300 mb-6 leading-relaxed">
+                Als Eugen Kretschmann die Crema Group gründete, hatte er eine klare Vision: Handwerkskunst und Innovation zu vereinen, um Räume zu schaffen, die Menschen bewegen. Was mit einem kleinen Betrieb begann, ist heute eine Unternehmensgruppe, die Standards setzt.
+              </p>
+              <p class="text-gray-300 mb-6 leading-relaxed">
+                Die Crema Group steht für mehr als nur Bauprojekte. Sie steht für eine Philosophie, die Tradition respektiert und gleichzeitig mutig in die Zukunft blickt. Interior Design, nachhaltiges Bauen und generationenübergreifende Projekte – das ist unsere DNA.
+              </p>
+              <div class="bg-accent-color/20 p-6 rounded-lg border-l-4 border-accent-color">
+                <p class="text-lg font-medium text-white italic">
+                  "Wir bauen nicht nur Häuser – wir schaffen Lebensräume, die Geschichten erzählen und Generationen verbinden."
+                </p>
+                <p class="text-accent-color font-medium mt-3">– Eugen Kretschmann, Gründer der Crema Group</p>
+              </div>
+            </div>
+            <div>
+              <!-- KI-Bildprompt: Porträt eines erfolgreichen Unternehmers in modernem Büro, Baupläne und Architekturmodelle im Hintergrund, warmes professionelles Licht -->
+              <img src="assets/projects/eugen-kretschmann.jpg" alt="Eugen Kretschmann, Gründer der Crema Group, in seinem Büro mit Bauplänen" class="w-full h-80 object-cover rounded-xl shadow-xl">
+            </div>
           </div>
 
-          <div class="text-center">
-            <div class="w-16 h-16 bg-accent-color text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Umsetzen & Begeistern</h3>
-            <p class="text-gray-700">
-              Unser erfahrenes Team montiert sauber, pünktlich und mit Liebe zum Detail. 
-              Das Ergebnis: Eine Glaslösung, die Sie jeden Tag aufs Neue begeistert.
-            </p>
+          <!-- Vision Highlight -->
+          <div class="bg-gradient-to-r from-accent-color/20 to-accent-color/10 rounded-2xl p-8 md:p-12 text-center">
+            <div class="max-w-3xl mx-auto">
+              <h3 class="text-2xl md:text-3xl font-semibold mb-6">Unsere Mission</h3>
+              <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                Innovation, die bewegt. Handwerk, das begeistert. Visionen, die Realität werden. Die Crema Group vereint unter einem Dach, was zusammengehört: Expertise in Interior Design, nachhaltiges Bauen, intelligente Umnutzung historischer Bauten und Design für inklusives Leben.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div class="text-3xl font-bold text-accent-color mb-2">20+</div>
+                  <div class="text-gray-300">Jahre Erfahrung</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-accent-color mb-2">500+</div>
+                  <div class="text-gray-300">Projekte realisiert</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-accent-color mb-2">∞</div>
+                  <div class="text-gray-300">Visionen für morgen</div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Kundenstimme Section -->
+    <!-- Philosophy Section -->
     <section class="py-16 md:py-24">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
           <div class="bg-gray-50 rounded-2xl p-8 md:p-12">
-            <svg class="w-12 h-12 text-accent-color mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-            </svg>
-            <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-6 italic leading-relaxed">
-              "Ich habe selten ein Handwerksunternehmen erlebt, das so gut zuhört und dabei trotzdem eigene kreative Impulse einbringt. Das Ergebnis hat meine Erwartungen übertroffen."
+            <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Unsere Philosophie</h3>
+            <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-8 italic leading-relaxed">
+              "Glas ist nicht nur Material – es ist Charakter. Und genau das formen wir."
             </blockquote>
-            <div class="text-accent-color font-semibold">
-              Sarah Müller, Architektin, Hamburg
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Über die Crema Group Section -->
-    <section class="py-16 md:py-24 bg-gray-900 text-white">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center">
-          <div class="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6">
-              Teil einer größeren Vision
-            </h2>
-            <p class="text-lg text-gray-300 mb-6">
-              Als Teil der Crema Group arbeiten wir an Projekten, die das Leben von morgen prägen. 
-              Ob Generationenwohnen, nachhaltige Architektur oder innovative Wohnkonzepte – 
-              wir verbinden lokale Handwerkskunst mit visionären Ideen.
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Jedes Projekt erzählt eine Geschichte. Jede Glaslösung spiegelt Persönlichkeit wider. Bei uns erhalten Sie nicht nur ein Produkt – Sie erhalten ein Stück Handwerkskunst, das Ihren Raum und Ihr Leben bereichert.
             </p>
-            <p class="text-lg text-gray-300 mb-8">
-              Diese Erfahrung aus Großprojekten fließt in jede unserer individuellen Glaslösungen ein. 
-              So profitieren Sie von Innovation und Expertise auf höchstem Niveau.
-            </p>
-            <a href="projekte.html" class="bg-accent-color hover:bg-opacity-80 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 inline-block">
-              Unsere Projekte entdecken
-            </a>
-          </div>
-          <div class="lg:w-1/2 grid grid-cols-2 gap-6">
-            <div class="text-center">
-              <div class="text-4xl font-bold text-accent-color mb-2">20+</div>
-              <div class="text-gray-300">Jahre Erfahrung</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-bold text-accent-color mb-2">500+</div>
-              <div class="text-gray-300">Zufriedene Kunden</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-bold text-accent-color mb-2">1000+</div>
-              <div class="text-gray-300">Projekte realisiert</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-bold text-accent-color mb-2">∞</div>
-              <div class="text-gray-300">Visionen für morgen</div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
+    <section class="py-20 md:py-24 bg-[#242c38]">
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
-          Bereit für Ihre persönliche Glaslösung?
+
+        <h2 class="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
+          Lassen Sie uns gemeinsam Räume mit Charakter schaffen
         </h2>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
-          Lassen Sie uns gemeinsam Ihre Vision verwirklichen. 
-          Kostenlose Beratung, maßgeschneiderte Lösungen und ein Team, das Ihre Träume ernst nimmt.
+
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+           Ihre Vision ist der Ausgangspunkt. Unsere Leidenschaft für Glas und Detail ist das Mittel, sie in zeitlose Eleganz zu verwandeln.
         </p>
-        <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-4 px-10 rounded-lg text-xl transition duration-300 inline-block">
-          Jetzt kostenlos beraten lassen
-        </a>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4">
+          <a href="kontaktformular.html" class="bg-[#b58929] text-white px-8 py-3 rounded-md text-base font-semibold hover:bg-opacity-90 transition-all duration-300 shadow-lg">
+            Kontakt aufnehmen
+          </a>
+          <p class="text-sm text-gray-400 hidden sm:block">
+            Unsere Projekte
+          </p>
+        </div>
+
       </div>
     </section>
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-12">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto px-6 max-w-screen-xl overflow-x-hidden">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        
         <!-- Company Info -->
         <div>
-          <img src="attached_assets/logoos.png" alt="IAS Logo" class="h-16 w-auto mb-4 opacity-80">
+          <img src="attached_assets/logoos.png" alt="IAS Logo" class="h-12 w-auto mb-4 opacity-80">
           <p class="text-gray-400 mb-4">
             Ihr Partner für individuelle Glaslösungen. Seit über 20 Jahren verwirklichen wir Wohnträume mit Präzision und Leidenschaft.
           </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-              </svg>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.747 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.99C24.007 5.367 18.641.001 12.017.001z"/>
-              </svg>
-            </a>
+          <div class="text-sm text-gray-500">
+            Teil der Crema Group
           </div>
         </div>
 
-        <!-- Navigation -->
+        <!-- Quick Links -->
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">Navigation</h4>
           <ul class="space-y-3">
-            <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Startseite</a></li>
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
             <li><a href="ueber-uns.html" class="text-gray-400 hover:text-white transition duration-300">Über uns</a></li>
             <li><a href="projekte.html" class="text-gray-400 hover:text-white transition duration-300">Projekte</a></li>
             <li><a href="kontaktformular.html" class="text-gray-400 hover:text-white transition duration-300">Kontakt</a></li>
@@ -338,7 +309,7 @@
           <h4 class="text-lg font-semibold text-white mb-4">Unsere Lösungen</h4>
           <ul class="space-y-3">
             <li><a href="innenausbau.html" class="text-gray-400 hover:text-white transition duration-300">Innenausbau & Gestaltung</a></li>
-            <li><a href="haustechnik.html" class="text-gray-400 hover:text-white transition duration-300">Haustechnik & Smartliving</a></li>
+            <li><a href="haustechnik.html" class="text-gray-400 hover:text-white transition duration-300">Haustechnik & Smart Living</a></li>
             <li><a href="naturstein.html" class="text-gray-400 hover:text-white transition duration-300">Naturstein & Fliesen</a></li>
             <li><a href="denkmalpflege.html" class="text-gray-400 hover:text-white transition duration-300">Denkmalpflege & Spezialarbeiten</a></li>
           </ul>
@@ -347,38 +318,31 @@
         <!-- Contact Info -->
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">Kontakt</h4>
-          <ul class="space-y-3 text-gray-400">
-            <li class="flex items-center">
-              <svg class="w-5 h-5 mr-3 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-              </svg>
-              <a href="tel:+4940607767120" class="hover:text-white transition duration-300">+49 (0) 40.6077 67120</a>
-            </li>
-            <li class="flex items-center">
-              <svg class="w-5 h-5 mr-3 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-              <a href="mailto:info@ias-hh.de" class="hover:text-white transition duration-300">info@ias-hh.de</a>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-5 h-5 mr-3 mt-0.5 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              <span>Grevenweg 89<br>20537 Hamburg</span>
-            </li>
-          </ul>
+          <div class="space-y-3 text-sm">
+            <p>
+              <span class="block text-gray-500">Telefon:</span>
+              <a href="tel:+49123456789" class="text-gray-400 hover:text-white transition duration-300">+49 (0) 123 456 789</a>
+            </p>
+            <p>
+              <span class="block text-gray-500">E-Mail:</span>
+              <a href="mailto:info@ias-glas.de" class="text-gray-400 hover:text-white transition duration-300">info@ias-glas.de</a>
+            </p>
+            <p>
+              <span class="block text-gray-500">Adresse:</span>
+              <span class="text-gray-400">Musterstraße 123<br>12345 Musterstadt</span>
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Bottom Bar -->
-      <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">
-          © <span id="currentYear"></span> IAS - Individual Glass Solutions. Alle Rechte vorbehalten.
+      <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-gray-500 mb-4 md:mb-0">
+          © <span id="currentYear">2024</span> IAS - Innen Ausbau Service GmbH. Alle Rechte vorbehalten.
         </p>
         <div class="flex space-x-6">
-          <a href="/impressum" class="text-gray-400 hover:text-white text-sm transition duration-300">Impressum</a>
-          <a href="/datenschutz" class="text-gray-400 hover:text-white text-sm transition duration-300">Datenschutz</a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">Impressum</a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">Datenschutz</a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">AGB</a>
         </div>
       </div>
     </div>
@@ -391,6 +355,6 @@
     src="https://questionansweringusingembeddings.onrender.com/static/chat_widget.js"
     defer
   ></script>
-
 </body>
+
 </html>
