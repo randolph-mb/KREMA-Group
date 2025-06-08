@@ -1,0 +1,70 @@
+Du hast Zugriff auf alle Dateien der IAS-Webseite (Individual Glass Solutions).
+Bitte überarbeite die bestehende Datei ueber-uns.html vollständig und bringe sie stilistisch, inhaltlich und visuell in Einklang mit der Startseite (index.html). Ziel ist eine Seite, die die Besucher emotional abholt, Vertrauen aufbaut und die Werte der Marke professionell vermittelt.
+
+✅ Ziel und Wirkung:
+Die neue „Über uns“-Seite soll:
+
+den Stil und die Qualität der Startseite aufgreifen
+
+mit einem visuell starken Hero-Einstieg beginnen (wie index.html)
+
+einen klaren, emotionalen ersten Eindruck erzeugen
+
+modular und angenehm scrollbar aufgebaut sein (Abschnittsstruktur)
+
+🧱 Gewünschte Seitenstruktur:
+Hero-Bereich
+
+Großes, hochwertiges Hintergrundbild (z. B. Team, Glasprojekt, Werkbank)
+
+Dunkles Overlay mit weißem Text
+
+Headline z. B.:
+„Hinter jeder Glaslösung steht ein Mensch, der Licht gestalten will.“
+
+Kurzer Untertitel, CTA optional
+
+Intro-Abschnitt mit starker Aussage
+
+Großer Text (z. B. text-2xl md:text-3xl font-semibold)
+
+Beispieltext:
+„Wir sind die, die Maßarbeit ernst nehmen. Die, die zuhören. Die, die das Unsichtbare in Glas sichtbar machen.“
+
+3-Spalten-Sektion: Unsere Werte
+
+Icons oder Illustrationen für:
+Präzision – Vertrauen – Gestaltungskraft
+
+Darunter kurze Beschreibungen (jeweils 2–3 Zeilen)
+
+Ablauf: So arbeiten wir
+
+Drei klar gegliederte Schritte mit Icons oder Ziffern:
+1. Beratung → 2. Planung → 3. Umsetzung
+
+Struktur wie auf Startseite (z. B. grid grid-cols-1 md:grid-cols-3)
+
+Kundenstimme / Zitat-Block (optional)
+
+„Ich habe selten ein Handwerksunternehmen erlebt, das so gut zuhört.“ – Architektin, Köln
+
+🎨 Design-Vorgaben:
+Nutze Tailwind CSS und bestehende Utility-Klassen wie .accent-color, .text-accent-color, .shadow-xl, .rounded-lg
+
+Verwende dieselben Breakpoints, Container-Breiten und Farben wie index.html
+
+Achte auf Responsiveness und sauberen visuellen Rhythmus beim Scrollen
+
+Verwende ggf. passende Bilder aus assets/ oder attached_assets/
+
+⚙️ Technische Hinweise:
+Die Datei ueber-uns.html soll komplett überschrieben werden mit der neuen Version
+
+Neue Bilder bitte in assets/ueber-uns/ speichern (ggf. neu anlegen)
+
+Verwende semantisches HTML (<section>, <article>, <blockquote>, etc.)
+
+Navigation und Footer sollen identisch zur Startseite bleiben
+
+Ziel: Eine moderne, inspirierende „Über uns“-Seite, die das Vertrauen in die Marke IAS stärkt – und sich anfühlt wie ein natürlicher Teil der hochwertigen Startseite.
