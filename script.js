@@ -286,3 +286,71 @@ window.addEventListener('resize', function() {
     adjustHeroSectionHeight();
   }
 });
+
+// Testimonial Slider Logik
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const nextBtn = document.getElementById('next-testimonial');
+  const prevBtn = document.getElementById('prev-testimonial');
+  let currentSlide = 0;
+  let slideInterval;
+
+  function showSlide(index) {
+    // Alle Slides ausblenden
+    slides.forEach((slide, i) => {
+      slide.classList.add('opacity-0', 'hidden');
+      slide.classList.remove('animate-fade-in');
+    });
+
+    // Den gewünschten Slide einblenden
+    const slide = slides[index];
+    slide.classList.remove('hidden');
+    // Kurze Verzögerung, damit die CSS-Animation korrekt ausgelöst wird
+    setTimeout(() => {
+      slide.classList.remove('opacity-0');
+      slide.classList.add('animate-fade-in');
+    }, 10);
+
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const newIndex = (currentSlide + 1) % slides.length;
+    showSlide(newIndex);
+  }
+
+  function prevSlide() {
+    const newIndex = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(newIndex);
+  }
+
+  // Automatisches Wechseln starten
+  function startSlideShow() {
+    slideInterval = setInterval(nextSlide, 7000); // Wechselt alle 7 Sekunden
+  }
+
+  // Automatisches Wechseln stoppen und neu starten (wenn der User klickt)
+  function resetSlideShow() {
+    clearInterval(slideInterval);
+    startSlideShow();
+  }
+
+  // Event Listeners für die Pfeile
+  if (nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetSlideShow();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetSlideShow();
+    });
+  }
+
+  // Initialisierung
+  if (slides.length > 0) {
+    showSlide(0);
+    startSlideShow();
+  }
+});

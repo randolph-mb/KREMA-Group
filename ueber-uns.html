@@ -99,10 +99,11 @@
           <span class="text-accent-color">Eine Philosophie, die verbindet.</span>
         </h1>
         <p class="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
-          Seit über zwei Jahrzehnten verwandeln wir Visionen in Realität. Als Teil der Crema Group verbinden wir traditionelles Handwerk mit innovativer Technik – für Räume, die bewegen.
+          Seit über zwei Jahrzehnten verwandeln wir Visionen in Realität.
+          Als Partner der KREMA Yachtservice & Interior Design GmbH verbinden wir traditionelles Handwerk mit innovativer Technik – für Räume mit Charakter.
         </p>
         <div class="text-sm text-accent-color font-medium">
-          IAS – Teil der Krema Group
+          IAS – Partner der KREMA Yachtservice & Interior Design GmbH
         </div>
       </div>
     </section>
@@ -236,18 +237,60 @@
       </div>
     </section>
 
-    <!-- Philosophy Section -->
+    <!-- Testimonials Section -->
     <section class="py-16 md:py-24">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
-          <div class="bg-gray-50 rounded-2xl p-8 md:p-12">
-            <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Unsere Philosophie</h3>
-            <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-8 italic leading-relaxed">
-              "Glas ist nicht nur Material – es ist Charakter. Und genau das formen wir."
-            </blockquote>
-            <p class="text-lg text-gray-600 leading-relaxed">
-              Jedes Projekt erzählt eine Geschichte. Jede Glaslösung spiegelt Persönlichkeit wider. Bei uns erhalten Sie nicht nur ein Produkt – Sie erhalten ein Stück Handwerkskunst, das Ihren Raum und Ihr Leben bereichert.
-            </p>
+          <div class="bg-gray-50 rounded-2xl p-8 md:p-12 relative">
+            <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-8">Was unsere Kunden sagen</h3>
+
+            <!-- Testimonial Slider Container -->
+            <div id="testimonial-slider" class="relative h-48 md:h-40">
+
+              <!-- Einzelne Testimonial-Slide 1 -->
+              <div class="testimonial-slide absolute inset-0 transition-opacity duration-500 ease-in-out">
+                <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-4 italic leading-relaxed">
+                  "Die Präzision und die Qualität der Glasarbeiten von IAS sind unübertroffen. Eine absolute Bereicherung für unser neuestes Bauprojekt."
+                </blockquote>
+                <p class="font-semibold text-gray-800">Anna Schmidt</p>
+                <p class="text-sm text-gray-500">Leitende Architektin, Architekturbüro Visionär</p>
+              </div>
+
+              <!-- Einzelne Testimonial-Slide 2 (standardmäßig verborgen) -->
+              <div class="testimonial-slide absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 hidden">
+                <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-4 italic leading-relaxed">
+                  "Von der Beratung bis zur Montage lief alles perfekt. Unsere neue Glasdusche ist das Highlight im Badezimmer. Wir sind begeistert!"
+                </blockquote>
+                <p class="font-semibold text-gray-800">Familie Meier</p>
+                <p class="text-sm text-gray-500">Privatkunden aus Musterstadt</p>
+              </div>
+
+              <!-- Einzelne Testimonial-Slide 3 (standardmäßig verborgen) -->
+              <div class="testimonial-slide absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 hidden">
+                <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-4 italic leading-relaxed">
+                  "Als langjähriger Geschäftspartner schätzen wir die Zuverlässigkeit und die innovative Herangehensweise der IAS. Eine Partnerschaft auf Augenhöhe."
+                </blockquote>
+                <p class="font-semibold text-gray-800">Markus Weber</p>
+                <p class="text-sm text-gray-500">CEO, Weber Interior Design</p>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="absolute inset-y-0 left-0 md:-left-12 flex items-center">
+              <button id="prev-testimonial" class="p-2 rounded-full bg-white/50 hover:bg-white transition shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            </div>
+            <div class="absolute inset-y-0 right-0 md:-right-12 flex items-center">
+              <button id="next-testimonial" class="p-2 rounded-full bg-white/50 hover:bg-white transition shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
           </div>
         </div>
       </div>
