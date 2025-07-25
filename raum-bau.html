@@ -68,21 +68,30 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-200">
-      <div class="container mx-auto px-6">
+    <section class="py-16 md:py-24 relative overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img src="attached_assets/u9998333378_Generate_a_wide_elegant_and_modern_background_ima_fac0c0f2-82b7-4131-acca-74f70f3df946_2_1753441611084.png" alt="Moderner Innenraum mit eleganter Holzverkleidung" class="w-full h-full object-cover">
+      </div>
+      
+      <!-- Gradient Overlay für bessere Lesbarkeit -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-amber-900/30"></div>
+      
+      <!-- Content -->
+      <div class="container mx-auto px-6 relative z-10">
         <div class="text-center max-w-4xl mx-auto">
           <div class="flex items-center justify-center mb-6">
-            <div class="w-20 h-20 bg-accent-color rounded-full flex items-center justify-center mr-4">
+            <div class="w-20 h-20 bg-accent-color/90 rounded-full flex items-center justify-center mr-4 backdrop-blur-sm">
               <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
               </svg>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">🏠 KREMA Raum & Bau</h1>
+            <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">🏠 KREMA Raum & Bau</h1>
           </div>
-          <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+          <p class="text-xl text-white/95 mb-8 leading-relaxed drop-shadow-md">
             Individuelle Raumkonzepte und hochwertige Glaslösungen. Von modernem Innenausbau bis zur sensiblen Denkmalpflege – wir schaffen Räume mit Charakter.
           </p>
-          <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center inline-block">
+          <a href="kontaktformular.html" class="bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center inline-block shadow-lg">
             Kostenlose Beratung anfordern
           </a>
         </div>
