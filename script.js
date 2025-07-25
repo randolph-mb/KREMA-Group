@@ -219,6 +219,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Mobile Expertise Dropdown functionality
+  const mobileExpertiseToggle = document.getElementById('mobile-expertise-toggle');
+  const mobileExpertiseMenu = document.getElementById('mobile-expertise-menu');
+  const mobileExpertiseIcon = document.getElementById('mobile-expertise-icon');
+
+  if (mobileExpertiseToggle && mobileExpertiseMenu && mobileExpertiseIcon) {
+    mobileExpertiseToggle.addEventListener('click', function() {
+      mobileExpertiseMenu.classList.toggle('hidden');
+      mobileExpertiseIcon.classList.toggle('rotate-180');
+    });
+  }
+
   
 
   // Contact Form setup with AJAX submission to Formspree
