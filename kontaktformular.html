@@ -50,71 +50,41 @@
             class="text-gray-700 hover:text-accent-color font-medium transition duration-300"
             >Startseite</a
           >
+          
+          <!-- Expertise Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide flex items-center space-x-1">
+              <span>Expertise</span>
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            
+            <!-- Dropdown Menu -->
+            <div class="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-2">
+                <a href="schiff-technik.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 font-medium">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                    <span>Schiff & Technik</span>
+                  </div>
+                </a>
+                <a href="raum-bau.html" class="block px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-accent-color transition-colors duration-200 font-medium">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-accent-color rounded-full"></div>
+                    <span>Raum & Bau</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
           <a
             href="ueber-uns.html"
             class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide"
             >Über uns</a
           >
 
-          <!-- Lösungen Dropdown -->
-          <div class="relative group">
-            <button
-              class="text-gray-700 hover:text-accent-color font-medium transition duration-300 flex items-center"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Lösungen
-              <svg
-                class="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div
-              class="absolute top-full left-0 bg-white shadow-lg rounded-lg py-2 min-w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
-              role="menu"
-            >
-              <a
-                href="innenausbau.html"
-                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color"
-                role="menuitem"
-                >Innenausbau & Gestaltung</a
-              >
-              <a
-                href="haustechnik.html"
-                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color"
-                role="menuitem"
-                >Haustechnik & Smart Living</a
-              >
-              <a
-                href="naturstein.html"
-                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color"
-                role="menuitem"
-                >Naturstein & Fliesen</a
-              >
-              <a
-                href="denkmalpflege.html"
-                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-accent-color"
-                role="menuitem"
-                >Denkmalpflege & Spezialarbeiten</a
-              >
-            </div>
-          </div>
-
-          <a
-            href="projekte.html"
-            class="text-gray-700 hover:text-accent-color font-medium transition duration-300"
-            >Projekte</a
-          >
           <a
             href="kontaktformular.html"
             class="text-accent-color font-medium transition duration-300"
@@ -170,38 +140,31 @@
             class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300"
             >Startseite</a
           >
+          
+          <!-- Mobile Expertise Section -->
+          <div class="py-2">
+            <button id="mobile-expertise-toggle" class="w-full flex items-center justify-between text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">
+              <span>Expertise</span>
+              <svg id="mobile-expertise-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="mobile-expertise-menu" class="hidden pl-4 space-y-2 mt-2">
+              <a href="schiff-technik.html" class="block text-gray-600 hover:text-blue-600 py-2 transition duration-300 flex items-center space-x-2">
+                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                <span>Schiff & Technik</span>
+              </a>
+              <a href="raum-bau.html" class="block text-gray-600 hover:text-accent-color py-2 transition duration-300 flex items-center space-x-2">
+                <div class="w-2 h-2 bg-accent-color rounded-full"></div>
+                <span>Raum & Bau</span>
+              </a>
+            </div>
+          </div>
+          
           <a
             href="ueber-uns.html"
             class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300"
             >Über uns</a
-          >
-          <div class="border-l-2 border-gray-200 pl-4 space-y-2">
-            <p class="text-gray-500 text-sm font-medium">Lösungen</p>
-            <a
-              href="duschkabinen.html"
-              class="block text-gray-700 hover:text-accent-color py-1 transition duration-300"
-              >Innenausbau & Gestaltung</a
-            >
-            <a
-              href="glasvordaecher.html"
-              class="block text-gray-700 hover:text-accent-color py-1 transition duration-300"
-              >Haustechnik & Smart Living</a
-            >
-            <a
-              href="bruestungen.html"
-              class="block text-gray-700 hover:text-accent-color py-1 transition duration-300"
-              >Naturstein & Fliesen</a
-            >
-            <a
-              href="glaselemente.html"
-              class="block text-gray-700 hover:text-accent-color py-1 transition duration-300"
-              >Denkmalpflege & Spezialarbeiten</a
-            >
-          </div>
-          <a
-            href="projekte.html"
-            class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300"
-            >Projekte</a
           >
           <a
             href="kontaktformular.html"
