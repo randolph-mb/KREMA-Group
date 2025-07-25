@@ -1,0 +1,55 @@
+Ich habe bereits eine bestehende Website für unsere Firma EAS (Innenausbau-Service) aufgebaut. Ich möchte jetzt diese Seite zur neuen Website der „KREMA Group“ umbauen – ohne die bisherigen Inhalte zu verlieren. Bitte führe die folgenden Änderungen präzise durch und zeige mir das Ergebnis als strukturierte Seitenvorschau oder Layout-Entwurf.
+
+🔷 1. Allgemeine Umbenennung:
+Die gesamte Website soll nicht mehr unter „EAS“ laufen, sondern unter „KREMA Group“
+
+Das Logo, der Name im Header und Footer werden überall auf KREMA Group geändert
+
+🔷 2. Startseite:
+Komplett neu gestalten
+
+Titel: „Technik auf See. Lösungen an Land.“
+
+Einleitungstext:
+
+Willkommen bei der KREMA Group – Spezialisten für zwei Kompetenzbereiche:
+
+Schiff & Technik – Sonderbau, Refit & technische Lösungen
+
+Raum & Bau – Innenausbau, Glaslösungen & Denkmalpflege
+
+Zwei große Buttons/Kacheln (nebeneinander oder untereinander):
+
+⚓ KREMA Schiff & Technik → führt auf /loesungen
+
+🏠 KREMA Raum & Bau → führt ebenfalls auf /loesungen
+
+🔷 3. Navigation (Menü oben):
+Startseite
+
+Lösungen → ersetzt die bisherige „Leistungen“-Seite
+→ Auf dieser Seite stehen zwei neue Kacheln:
+
+KREMA Schiff & Technik → führt später auf neue Unterseite
+
+KREMA Raum & Bau → zeigt bestehende Inhalte (bisherige „Leistungen“ der EAS)
+
+Über uns
+→ Nur den Text ändern: Erzähle dort kurz von der KREMA Group, nicht mehr über EAS
+→ Der Rest der Seite (z. B. Projekte, Team, Bilder) bleibt unverändert
+
+Projekte
+→ Keine Änderungen! Seite bleibt wie sie ist
+
+Kontakt
+→ Keine Änderungen! Formular und Adresse bleiben gleich
+
+🔷 4. Seiteninhalte:
+Alle Inhalte der bisherigen EAS-Seiten unter „Leistungen“, „Projekte“, „Kontakt“ bleiben erhalten, werden aber jetzt unter KREMA Raum & Bau geführt.
+
+Nur die Startseite, die Seite „Lösungen“, und der Text im Bereich „Über uns“ werden aktualisiert.
+
+Technische Hinweise:
+Die Website muss nicht interaktiv oder funktional sein – es reicht ein statischer, klickbarer Entwurf oder Seitenvorschau
+
+Ziel ist es, die Struktur und das neue Erscheinungsbild zu visualisieren, ohne alle Seiten neu bauen zu müssen
