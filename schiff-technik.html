@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KREMA Schiff & Technik - Unsere Leistungen | KREMA Group</title>
+  <meta name="description" content="Entdecken Sie unsere vielfältigen Leistungen im Bereich Schiff & Technik: Sonderbau, Refit, technische Systeme und maritime Beratung - alles aus einer Hand.">
+  <link rel="icon" type="image/png" href="assets/kg.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Header Section -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="assets/kg.jpg" alt="KREMA Group Logo" class="h-10 w-10 md:h-12 md:w-12 object-contain">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 hover:text-accent-color transition duration-300">
+          KREMA-Group
+        </h1>
+      </a>
+      
+      <!-- Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Startseite</a>
+        
+        <!-- Expertise Dropdown -->
+        <div class="relative group">
+          <button class="text-blue-600 font-medium transition-all duration-300 tracking-wide flex items-center space-x-1">
+            <span>Expertise</span>
+            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div class="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div class="py-2">
+              <a href="schiff-technik.html" class="block px-4 py-3 text-blue-600 bg-blue-50 transition-colors duration-200 font-medium">
+                <div class="flex items-center space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span>Schiff & Technik</span>
+                </div>
+              </a>
+              <a href="raum-bau.html" class="block px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-accent-color transition-colors duration-200 font-medium">
+                <div class="flex items-center space-x-3">
+                  <div class="w-2 h-2 bg-accent-color rounded-full"></div>
+                  <span>Raum & Bau</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="projekte.html" class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Projekte</a>
+        <a href="ueber-uns.html" class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Über uns</a>
+        <a href="kontaktformular.html" class="text-gray-800 hover:text-accent-color font-medium transition-all duration-300 tracking-wide">Kontakt</a>
+      </div>
+      
+      <!-- CTA Button + Mobile Menu Button -->
+      <div class="flex items-center space-x-4">
+        <a href="kontaktformular.html" class="hidden md:inline-flex bg-accent-color hover:bg-opacity-90 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">
+          Beratung anfordern
+        </a>
+        
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-color focus:ring-offset-2 rounded-md p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Startseite</a>
+        
+        <!-- Mobile Expertise Section -->
+        <div class="py-2">
+          <button id="mobile-expertise-toggle" class="w-full flex items-center justify-between text-blue-600 font-medium py-2 transition duration-300">
+            <span>Expertise</span>
+            <svg id="mobile-expertise-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobile-expertise-menu" class="hidden pl-4 space-y-2 mt-2">
+            <a href="schiff-technik.html" class="block text-blue-600 py-2 transition duration-300 flex items-center space-x-2">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <span>Schiff & Technik</span>
+            </a>
+            <a href="raum-bau.html" class="block text-gray-600 hover:text-accent-color py-2 transition duration-300 flex items-center space-x-2">
+              <div class="w-2 h-2 bg-accent-color rounded-full"></div>
+              <span>Raum & Bau</span>
+            </a>
+          </div>
+        </div>
+        
+        <a href="projekte.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Projekte</a>
+        <a href="ueber-uns.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Über uns</a>
+        <a href="kontaktformular.html" class="block text-gray-700 hover:text-accent-color font-medium py-2 transition duration-300">Kontakt</a>
+        <div class="pt-4 border-t border-gray-200">
+          <a href="kontaktformular.html" class="block w-full bg-accent-color hover:bg-opacity-90 text-white font-semibold py-3 px-4 rounded-lg text-center transition duration-300">
+            Beratung anfordern
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 relative overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img src="attached_assets/k.png" alt="Moderne Schiffstechnik und maritime Lösungen" class="w-full h-full object-cover">
+      </div>
+      
+      <!-- Gradient Overlay für bessere Lesbarkeit -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-blue-900/30"></div>
+      
+      <!-- Content -->
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-20 h-20 bg-blue-600/90 rounded-full flex items-center justify-center mr-4 backdrop-blur-sm">
+              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 13h2l.5-2h13l.5 2h2l-2-8H5l-2 8zm14.5 0L16 7H8l-1.5 6h11zM12 2c1.1 0 2 .9 2 2v1h6c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1h-1v6c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V8H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h6V4c0-1.1.9-2 2-2zm5 15v2c0 .55-.45 1-1 1s-1-.45-1-1v-2h2zm-10 0v2c0 .55-.45 1-1 1s-1-.45-1-1v-2h2z"/>
+              </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">KREMA Schiff & Technik</h1>
+          </div>
+          <p class="text-xl text-white/95 mb-8 leading-relaxed drop-shadow-md">
+            Maritime Kompetenz trifft auf innovative Technik. Von Sonderbauten über Refit-Projekte bis hin zu maßgeschneiderten technischen Lösungen für die Schifffahrt.
+          </p>
+          <a href="kontaktformular.html" class="bg-blue-600 hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-center inline-block shadow-lg">
+            Kostenlose Beratung anfordern
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Unsere Leistungsbereiche</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          
+          <!-- Schiffs-Sonderbau & Umbauten -->
+          <a href="sonderbau.html" class="group block">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8">
+                <div class="flex items-center mb-4">
+                  <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-800">Schiffs-Sonderbau & Umbauten</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Maßgeschneiderte Schiffbauprojekte und professionelle Umbauten. Wir realisieren individuelle Konstruktionen und Anpassungen für alle Schiffstypen nach höchsten Standards.
+                </p>
+                <ul class="text-gray-600 space-y-2 mb-6">
+                  <li>✓ Konstruktive Umbauten & Erweiterungen</li>
+                  <li>✓ Spezialaufbauten & Sonderkonstruktionen</li>
+                  <li>✓ Deck- und Aufbaumodifikationen</li>
+                  <li>✓ Klassifikationsgerechte Ausführung</li>
+                </ul>
+                <div class="text-blue-600 font-semibold group-hover:underline">
+                  Mehr erfahren →
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Refit & Modernisierung -->
+          <a href="refit.html" class="group block">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8">
+                <div class="flex items-center mb-4">
+                  <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-800">Refit & Modernisierung</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Umfassende Schiffsmodernisierung und Instandsetzung. Wir bringen Ihr Schiff auf den neuesten Stand der Technik und verlängern dessen Lebensdauer nachhaltig.
+                </p>
+                <ul class="text-gray-600 space-y-2 mb-6">
+                  <li>✓ Komplette Schiffssanierung</li>
+                  <li>✓ Antriebssystem-Modernisierung</li>
+                  <li>✓ Elektronik & Navigationssysteme</li>
+                  <li>✓ Strukturelle Verstärkungen</li>
+                </ul>
+                <div class="text-blue-600 font-semibold group-hover:underline">
+                  Mehr erfahren →
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Technische Systeme & Ausrüstung -->
+          <a href="technik.html" class="group block">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8">
+                <div class="flex items-center mb-4">
+                  <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-800">Technische Systeme & Ausrüstung</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Modernste Schiffstechnik und -ausrüstung für optimale Performance. Von der Maschinentechnik bis zur Elektronik – wir integrieren zuverlässige Systeme.
+                </p>
+                <ul class="text-gray-600 space-y-2 mb-6">
+                  <li>✓ Maschinen- & Antriebstechnik</li>
+                  <li>✓ Hydraulik & Pneumatik</li>
+                  <li>✓ Elektrotechnik & Automation</li>
+                  <li>✓ Sicherheitssysteme & Brandschutz</li>
+                </ul>
+                <div class="text-blue-600 font-semibold group-hover:underline">
+                  Mehr erfahren →
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Maritime Beratung & Planung -->
+          <a href="beratung.html" class="group block">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-8">
+                <div class="flex items-center mb-4">
+                  <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-800">Maritime Beratung & Planung</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                  Kompetente Beratung und präzise Projektplanung für maritime Vorhaben. Wir unterstützen Sie von der Konzeption bis zur erfolgreichen Umsetzung.
+                </p>
+                <ul class="text-gray-600 space-y-2 mb-6">
+                  <li>✓ Technische Machbarkeitsstudien</li>
+                  <li>✓ Projekt- & Kostenplanung</li>
+                  <li>✓ Genehmigungsverfahren</li>
+                  <li>✓ Klassifikations-Beratung</li>
+                </ul>
+                <div class="text-blue-600 font-semibold group-hover:underline">
+                  Mehr erfahren →
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-12">Warum KREMA Schiff & Technik?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Maritime Expertise</h3>
+            <p class="text-gray-700">Jahrzehntelange Erfahrung in der Schifffahrt und im Schiffbau.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Innovative Technik</h3>
+            <p class="text-gray-700">Modernste Technologien für zukunftssichere maritime Lösungen.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Termingerecht & Zuverlässig</h3>
+            <p class="text-gray-700">Präzise Planung und professionelle Umsetzung für pünktliche Fertigstellung.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-800 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Bereit für Ihr nächstes Maritimes Projekt?</h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+          Lassen Sie uns gemeinsam Ihre maritimen Visionen verwirklichen. Von der ersten Idee bis zur schlüsselfertigen Übergabe begleiten wir Sie mit maritimer Expertise und technischer Präzision.
+        </p>
+        <a href="kontaktformular.html" class="bg-blue-600 hover:bg-opacity-80 text-white font-semibold py-4 px-10 rounded-lg text-xl transition duration-300 inline-block">
+          Jetzt kostenlos beraten lassen
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Company Info -->
+        <div>
+          <img src="assets/kg.jpg" alt="KREMA Group Logo" class="h-16 w-auto mb-4 opacity-80">
+          <p class="text-gray-400 mb-4">
+            KREMA Group – Ihr Partner für maritime Technik und innovative Raumkonzepte. Seit Jahren verwirklichen wir anspruchsvolle Projekte mit Präzision und Leidenschaft.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.098.118.112.222.083.343-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.747 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.99C24.007 5.367 18.641.001 12.017.001z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Navigation</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Startseite</a></li>
+            <li><a href="schiff-technik.html" class="text-gray-400 hover:text-white transition duration-300">Schiff & Technik</a></li>
+            <li><a href="raum-bau.html" class="text-gray-400 hover:text-white transition duration-300">Raum & Bau</a></li>
+            <li><a href="projekte.html" class="text-gray-400 hover:text-white transition duration-300">Projekte</a></li>
+            <li><a href="ueber-uns.html" class="text-gray-400 hover:text-white transition duration-300">Über uns</a></li>
+            <li><a href="kontaktformular.html" class="text-gray-400 hover:text-white transition duration-300">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Schiff & Technik Leistungen</h4>
+          <ul class="space-y-3">
+            <li><a href="sonderbau.html" class="text-gray-400 hover:text-white transition duration-300">Schiffs-Sonderbau & Umbauten</a></li>
+            <li><a href="refit.html" class="text-gray-400 hover:text-white transition duration-300">Refit & Modernisierung</a></li>
+            <li><a href="technik.html" class="text-gray-400 hover:text-white transition duration-300">Technische Systeme & Ausrüstung</a></li>
+            <li><a href="beratung.html" class="text-gray-400 hover:text-white transition duration-300">Maritime Beratung & Planung</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Kontakt</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <a href="tel:+4940607767120" class="hover:text-white transition duration-300">+49 (0) 40.6077 67120</a>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-3 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <a href="mailto:info@krema-group.de" class="hover:text-white transition duration-300">info@krema-group.de</a>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 mr-3 mt-0.5 text-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Grevenweg 89<br>20537 Hamburg</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          © <span id="currentYear"></span> KREMA Group. Alle Rechte vorbehalten.
+        </p>
+        <div class="flex space-x-6">
+          <a href="/impressum" class="text-gray-400 hover:text-white text-sm transition duration-300">Impressum</a>
+          <a href="/datenschutz" class="text-gray-400 hover:text-white text-sm transition duration-300">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- the assistent -->
+  <script
+    src="https://questionansweringusingembeddings.onrender.com/static/chat_widget.js"
+    defer
+  ></script>
+
+</body>
+</html>
