@@ -112,7 +112,7 @@ async function handleContactFormSubmit(event) {
     const formData = new FormData(form);
     
     // Send to Formspree via AJAX
-    const response = await fetch('https://formspree.io/f/mjkrkyaq', {
+    const response = await fetch('https://formspree.io/f/xrblyaej', {
       method: 'POST',
       body: formData,
       headers: {
