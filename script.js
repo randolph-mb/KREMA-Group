@@ -111,8 +111,8 @@ async function handleContactFormSubmit(event) {
     // Create FormData from the form
     const formData = new FormData(form);
     
-    // Send to Formspree via AJAX
-    const response = await fetch('https://formspree.io/f/xrblyaej', {
+    // Send to form.taxi via AJAX
+    const response = await fetch('https://form.taxi/s/fjsssfva', {
       method: 'POST',
       body: formData,
       headers: {
@@ -129,10 +129,10 @@ async function handleContactFormSubmit(event) {
       form.reset();
       clearAllContactErrors();
     } else {
-      // Handle Formspree validation errors
+      // Handle form.taxi validation errors
       const data = await response.json();
       if (data.errors) {
-        // Display Formspree field errors
+        // Display form.taxi field errors
         data.errors.forEach(error => {
           if (error.field && document.getElementById(error.field)) {
             showFieldError(error.field, error.message);
