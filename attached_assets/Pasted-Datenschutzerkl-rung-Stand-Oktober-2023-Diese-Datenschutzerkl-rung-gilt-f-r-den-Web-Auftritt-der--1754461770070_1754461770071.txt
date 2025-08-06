@@ -1,0 +1,86 @@
+Datenschutzerklärung
+Stand: Oktober 2023
+Diese Datenschutzerklärung gilt für den Web-Auftritt der KREMA Yachtservice & Interior Design GmbH.
+I. Verantwortlicher für die Datenverarbeitung
+Der Verantwortliche im Sinne der EU-Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:
+KREMA Yachtservice & Interior Design GmbH
+Grevenweg 89
+20537 Hamburg
+Deutschland
+Telefon: +49 (0) 40 2263 61570
+E-Mail: info@krema-group.de
+Website: [Ihre Website-URL hier einfügen]
+II. Kontakt für Datenschutzfragen
+Für alle Fragen zum Datenschutz können Sie sich an die oben genannten Kontaktdaten wenden. Die Benennung eines Datenschutzbeauftragten ist für unser Unternehmen gesetzlich nicht vorgeschrieben.
+III. Allgemeines zur Datenverarbeitung
+1. Umfang der Verarbeitung personenbezogener Daten
+Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist.
+2. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
+Soweit wir für Verarbeitungsvorgänge eine Einwilligung der betroffenen Person einholen, dient Art. 6 Abs. 1 lit. a DSGVO als Rechtsgrundlage.
+Bei der Verarbeitung von Daten, die zur Erfüllung eines Vertrages oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist, dient Art. 6 Abs. 1 lit. b DSGVO als Rechtsgrundlage.
+Soweit eine Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, dient Art. 6 Abs. 1 lit. c DSGVO als Rechtsgrundlage.
+Soweit die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines Dritten erforderlich ist und die Interessen, Grundrechte und Grundfreiheiten des Betroffenen das erstgenannte Interesse nicht überwiegen, dient Art. 6 Abs. 1 lit. f DSGVO als Rechtsgrundlage.
+3. Datenlöschung und Speicherdauer
+Die personenbezogenen Daten der betroffenen Person werden gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt. Eine Speicherung kann darüber hinaus erfolgen, wenn dies durch den europäischen oder nationalen Gesetzgeber vorgesehen wurde. Eine Sperrung oder Löschung der Daten erfolgt auch dann, wenn eine durch die genannten Normen vorgeschriebene Speicherfrist abläuft, es sei denn, dass eine Erforderlichkeit zur weiteren Speicherung der Daten für einen Vertragsabschluss oder eine Vertragserfüllung besteht.
+IV. Bereitstellung der Website und Erstellung von Server-Log-Dateien
+1. Beschreibung und Umfang der Datenverarbeitung
+Bei jedem Aufruf unserer Website erfasst unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Rechners. Folgende Daten werden hierbei erhoben:
+IP-Adresse des Nutzers
+Datum und Uhrzeit des Zugriffs
+Browsertyp und die verwendete Version
+Betriebssystem des Nutzers
+Referrer URL (die zuvor besuchte Seite)
+Aufgerufene Webseiten und Dateien auf unserer Website
+Diese Daten werden in den Logfiles unseres Systems gespeichert. Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten des Nutzers findet nicht statt.
+2. Rechtsgrundlage für die Datenverarbeitung
+Rechtsgrundlage für die vorübergehende Speicherung der Daten und der Logfiles ist unser berechtigtes Interesse gemäß Art. 6 Abs. 1 lit. f DSGVO.
+3. Zweck der Datenverarbeitung
+Die vorübergehende Speicherung der IP-Adresse ist notwendig, um eine Auslieferung der Website an den Rechner des Nutzers zu ermöglichen. Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen und die Sicherheit unserer informationstechnischen Systeme zu gewährleisten (z. B. zur Abwehr von Angriffen). In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung.
+4. Dauer der Speicherung
+Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Bei der Erfassung der Daten zur Bereitstellung der Website ist dies der Fall, wenn die jeweilige Sitzung beendet ist. Bei der Speicherung in Logfiles ist dies nach spätestens 7 Tagen der Fall.
+5. Widerspruchs- und Beseitigungsmöglichkeit
+Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung in Logfiles ist für den Betrieb der Internetseite zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruchsmöglichkeit.
+V. Verwendung von Cookies
+Unsere Website kann Cookies verwenden. Bei Cookies handelt es sich um kleine Textdateien, die im bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Technisch notwendige Cookies dienen dazu, unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Seite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann.
+Rechtsgrundlage ist unser berechtigtes Interesse an einer technisch fehlerfreien und optimierten Bereitstellung unserer Dienste gemäß Art. 6 Abs. 1 lit. f DSGVO. Cookies, die nicht technisch notwendig sind (z. B. für Analyse- oder Marketingzwecke), werden nur nach Ihrer ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) gesetzt.
+Sie haben als Nutzer die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden.
+VI. Chatbot & Nutzung der OpenAI API
+1. Beschreibung und Umfang der Datenverarbeitung
+Wir bieten auf unserer Website eine interaktive Chat-Funktion an. Wenn Sie diesen Chat nutzen, werden Ihre Texteingaben verarbeitet, um Ihnen automatisiert Antworten zu generieren. Hierfür nutzen wir die Technologie der OpenAI, L.L.C., 3180 18th St, San Francisco, CA 94110, USA. Ihre Eingaben werden an die Server von OpenAI übermittelt. Wir speichern Ihre IP-Adresse oder andere persönliche Kennungen im Zusammenhang mit dem Chat nicht dauerhaft.
+2. Rechtsgrundlage und Zweck der Datenverarbeitung
+Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einer modernen, effizienten und nutzerfreundlichen Kundenkommunikation und -beratung gemäß Art. 6 Abs. 1 lit. f DSGVO. Dient die Konversation der Anbahnung eines Vertrages, ist zusätzliche Rechtsgrundlage Art. 6 Abs. 1 lit. b DSGVO.
+3. Datenübermittlung in die USA
+OpenAI ist ein Unternehmen mit Sitz in den USA. Eine Datenübermittlung in die USA ist mit Risiken verbunden. Diese Übermittlung ist durch die Zertifizierung von OpenAI unter dem EU-U.S. Data Privacy Framework (DPF) abgesichert, wodurch ein angemessenes Datenschutzniveau gewährleistet wird. Weitere Informationen finden Sie in der Datenschutzerklärung von OpenAI: https://openai.com/privacy.
+4. Wichtiger Hinweis
+Wir bitten Sie, keine sensiblen oder vertraulichen personenbezogenen Daten (z.B. Gesundheitsdaten, Bankverbindungen) in das Chatfenster einzugeben.
+VII. Einbindung von Inhalten über ein Content Delivery Network (CDN)
+1. Beschreibung und Umfang der Datenverarbeitung
+Wie in der Netzwerkanalyse ersichtlich (3.4.17, style.css), nutzt unsere Website zur schnellen und einheitlichen Darstellung von Inhalten (wie Schriftarten, Stile und Skripte) ein Content Delivery Network (CDN). Wenn Sie unsere Seite aufrufen, lädt Ihr Browser die benötigten Ressourcen von Servern des CDN-Anbieters. Hierbei wird Ihre IP-Adresse an den CDN-Anbieter übermittelt.
+2. Rechtsgrundlage und Zweck
+Die Nutzung von CDNs erfolgt im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
+VIII. SSL- bzw. TLS-Verschlüsselung
+Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Wenn die Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+IX. Rechte der betroffenen Person
+Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d. DSGVO und es stehen Ihnen folgende Rechte gegenüber uns als dem Verantwortlichen zu:
+1. Auskunftsrecht (Art. 15 DSGVO)
+Sie können eine Bestätigung darüber verlangen, ob personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden.
+2. Recht auf Berichtigung (Art. 16 DSGVO)
+Sie haben ein Recht auf Berichtigung und/oder Vervollständigung, sofern die verarbeiteten Daten, die Sie betreffen, unrichtig oder unvollständig sind.
+3. Recht auf Löschung („Recht auf Vergessenwerden“) (Art. 17 DSGVO)
+Sie können verlangen, dass die Sie betreffenden Daten unverzüglich gelöscht werden, sofern einer der in Art. 17 DSGVO genannten Gründe zutrifft.
+4. Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)
+Sie können die Einschränkung der Verarbeitung Ihrer Daten unter den Voraussetzungen des Art. 18 DSGVO verlangen.
+5. Recht auf Unterrichtung (Art. 19 DSGVO)
+Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung geltend gemacht, sind wir verpflichtet, allen Empfängern, denen Ihre Daten offengelegt wurden, dies mitzuteilen.
+6. Recht auf Datenübertragbarkeit (Art. 20 DSGVO)
+Sie haben das Recht, Ihre Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und diese einem anderen Verantwortlichen zu übermitteln.
+7. Widerspruchsrecht (Art. 21 DSGVO)
+Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Ihrer Daten, die aufgrund von Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen. Wir verarbeiten Ihre Daten dann nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen.
+8. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung (Art. 7 Abs. 3 DSGVO)
+Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen. Durch den Widerruf wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.
+9. Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)
+Unbeschadet eines anderweitigen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde zu. Die für uns zuständige Aufsichtsbehörde ist:
+Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit
+Ludwig-Erhard-Str. 22, 7. OG
+20459 Hamburg
+E-Mail: mailbox@datenschutz.hamburg.de
